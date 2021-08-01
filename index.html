@@ -38,16 +38,27 @@
             --dodger: #4895ef;
             --cobalt: #1446a0;
         }
-
+        
         /* General element styles begin */
-        h1, h2, h3, h4, h5, h{
+
+
+        body {
+            border: 0%;
+            padding: 0%;
+            margin: 0%;
+        }
+
+
+        h1, h2, h3, h4, h5, h6 {
             font-family: Heebo;
+            margin: 20px;
         }
         
         p {
             font-family: ProSans;
             font-size:larger;
-            width: clamp(45ch, 50%, 75ch)
+            width: clamp(45ch, 50%, 75ch) ;
+            margin: 20px;
         }
         /* General element styles end */
 
@@ -68,7 +79,18 @@
 
 <body>
 
-    <iframe src="nav.html" class="navbar"></iframe>
+    <iframe src="nav.html" class="navbar"
+    
+    style="
+        background-color: slategrey;
+        padding: 0px;
+
+        border: 0px;
+        width: 100vw;
+        height: 100px;
+        "
+    
+    ></iframe>
 
 
     <h1>Title</h1>
