@@ -8,16 +8,82 @@
 
         <style>
 
+                    /* Fonts added Heebo- variable; ProSans - normal, bold, italic*/
+        @font-face {
+            font-family: Heebo;
+            src: url(./fonts/Heebo-VariableFont_wght.ttf);}
+
+        @font-face {
+            font-family: ProSans;
+            src: url(./fonts/SourceSansPro-Regular.ttf)
+        }
+
+        :root {
+            
+            /* Defining the 2021 colors in the root as variables*/
+
+            --pear: #cde43a ;
+            --seagreen: #58bc82 ;
+            --prussian: #13293d;
+            --uranian: #c4e3fd;
+            --dodger: #4895ef;
+            --cobalt: #1446a0;
+        }
+
+        /* General element styles begin */
+        
+        body {
+            margin: 0px;
+            border: 0px;
+            padding: 0px;
+            background-color: var(--uranian);
+        }
+        
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: Heebo;
+        }
+        
+        p {
+            font-family: ProSans;
+            font-size:larger;
+        }
+        /* General element styles end */
+
+        /* Footer element styling */
 
 
+        .footer-container {
+            
+        }
+
+        .footer {
+
+        }
+
+        .footer-heading {
+            
+        }
+
+        .navlinks {
+
+        }
+
+        .sponsors {
+
+        }
+
+        .social {
+
+        }
 
         </style>
 
     </head>
     <body>
-
+<div class="footer-container">
         <div class="footer">
-            <div class="navlinks">   
+            <div class="footer-heading navlinks">   
                     <p>Pages</p>
                     <a href="#" target="_blank">Home</a>
                     <a href="#" target="_blank">Team Members</a>
@@ -32,7 +98,7 @@
                     <a href="#" target="_blank">Biologix Competition</a>
                     <a href="#" target="_blank">Judging Form</a>
             </div>
-            <div class="sponsors">
+            <div class="footer-heading sponsors">
                 <p>Sponsors</p>
                 <a href="#" target="_blank">King's College London</a>
                 <a href="#" target="_blank">Wellcome</a>
@@ -44,7 +110,7 @@
                 <a href="#" target="_blank">BGM Lab Tech</a>
                 <a href="#" target="_blank">IDT</a>
             </div>
-            <div class="social">
+            <div class="footer-heading social">
                 <p>Contact Us</p>
                 <a href="#" target="_blank">Instagram</a>
                 <a href="#" target="_blank">Twitter</a>
@@ -52,6 +118,6 @@
                 <a href="#" target="_blank">Email</a>
             </div>
         </div>
-
+</div>
     </body>
 </html>
