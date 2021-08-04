@@ -61,14 +61,14 @@
         }
 
         .footer {
-            flex-grow: 1;
             display: grid;
             gap: 0.5rem;
             grid-template-columns: repeat( auto-fit , minmax(240px, 1fr));
-            justify-content: center;
+            justify-content: space-evenly;
         }
 
         .footer-heading {
+            grid-column: span 1;
             background-color: #1446a0;
             padding: 0.25rem;
             gap: 2px;
