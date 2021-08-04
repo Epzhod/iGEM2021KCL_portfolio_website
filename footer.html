@@ -61,6 +61,7 @@
         }
 
         .footer {
+            flex-grow: 1;
             display: grid;
             gap: 0.5rem;
             grid-template-columns: repeat( auto-fit , minmax(240px, 1fr));
@@ -98,10 +99,8 @@
 
         .social {
             background-color: #1446a0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
+            display: grid;
+            grid-template-rows: 2fr 1fr;
         }
 
         .social p{
@@ -109,15 +108,30 @@
         }
 
         .social-box{
-            flex-grow: 1;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: center;
             align-content: center;
         }
 
+        .social-box p {
+            flex-grow: 1;
+        }
+
+        .social-box ul {
+            flex-grow: 4;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-content: center;
+            list-style-type: none;
+            list-style-position: inside;
+            padding: 0.1rem;
+            margin-inline-start: 0px;
+            text-align: center;
+        }
+
         .renervate-logo{
-            flex-grow: 2;
             background-color: #1446a0;
             background-image: url(./footer_elements/longlogo.png);
             background-size: contain;
@@ -125,7 +139,22 @@
             background-position: center;
         }
 
+        .team-photo {
 
+        }
+
+        .team-photo img{
+            
+        }
+
+        .icon {
+
+        }
+
+        .icon:hover {
+            /* This method need the conversion from here: https://codepen.io/sosuke/pen/Pjoqqp */
+            filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+        }
 
         </style>
 
@@ -166,16 +195,21 @@
             </div>
             <div class="social">
                 <a class="renervate-logo" href="#" target="_top"></a>
-                <p>Contact Us</p>
+                
                 <div class="social-box">
-                        <a href="#" target="_blank">Instagram</a>                           
-                        <a href="#" target="_blank">Twitter</a>                             
-                        <a href="#" target="_blank">Facebook</a>                            
-                        <a href="#" target="_blank">Email</a>                               
+                    <p>Contact Us</p>
+                    <ul>
+                        <a href="#" target="_blank"><img class="icon" src="./footer_elements/instagram.svg"></a>                           
+                        <a href="#" target="_blank"><img class="icon" src="./footer_elements/twitter.svg"></a>                             
+                        <a href="#" target="_blank"><img class="icon" src="./footer_elements/facebook.svg"></a>                            
+                        <a href="#" target="_blank"><img class="icon" src="./footer_elements/envelope.svg"></a>
+                    </ul>                               
                 </div>
             </div>
         </div>
-        <div class="team-photo"></div>
+        <img src = "footer_elements/teamphoto.png" width = "100%" height = "auto" />
+        
+
 </div>
     </body>
 </html>
