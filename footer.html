@@ -91,16 +91,10 @@
             text-align: center;
         }
 
-        .navlinks {
-        }
-
-        .sponsors {
-        }
-
         .social {
             background-color: #1446a0;
             display: grid;
-            grid-template-rows: 2fr 1fr;
+            grid-template-rows: 1fr 1fr 2fr;
         }
 
         .social p{
@@ -131,28 +125,39 @@
             text-align: center;
         }
 
-        .renervate-logo{
+        .social-photo{
             background-color: #1446a0;
-            background-image: url(./footer_elements/teamphoto.png);
-            background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
         }
 
         .team-photo {
-
+            background-image: url(./footer_elements/teamlarge.jpeg);
+            background-size: cover;
+            margin: 2px;
         }
 
-        .team-photo img{
-            
+        .renervate-photo {
+            background-image: url(./footer_elements/longlogo.png);
+            background-size: contain;
         }
+
 
         .icon {
-
+            width: 20px;
+            height: 20px;
         }
 
         .icon:hover {
-            /* This method need the conversion from here: https://codepen.io/sosuke/pen/Pjoqqp */
+            /* This filter method need the conversion from here: https://codepen.io/sosuke/pen/Pjoqqp */
+            filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+        }
+
+        .icon2:hover {
+            filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+        }
+
+        #ltxt:hover  #licn {
             filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
         }
 
@@ -165,49 +170,49 @@
             <div class="footer-heading navlinks">   
                     <p>Pages</p>
                 <ul>
-                <li>    <a href="#" target="_blank">Home                        </a>        </li>
-                <li>    <a href="#" target="_blank">Team Members                </a>        </li>
-                <li>    <a href="#" target="_blank">Project Description         </a>        </li>
-                <li>    <a href="#" target="_blank">Project Design              </a>        </li>
-                <li>    <a href="#" target="_blank">Model                       </a>        </li>
-                <li>    <a href="#" target="_blank">Parts                       </a>        </li>
-                <li>    <a href="#" target="_blank">Proposed Implementation     </a>        </li>
-                <li>    <a href="#" target="_blank">Human Practices             </a>        </li>
-                <li>    <a href="#" target="_blank">Inclusivity Research        </a>        </li>
-                <li>    <a href="#" target="_blank">Science Communication       </a>        </li>
-                <li>    <a href="#" target="_blank">Biologix Competition        </a>        </li>
-                <li>    <a href="#" target="_blank">Judging Form                </a>        </li>
+                <li id = 'ltxt'>    <a href="#" target="_blank">Home                                <img id = 'licn' src="./footer_elements/arrow-up-right-circle.svg" class = "icon2"/>    </a>        </li>
+                <li id = 'ltxt'>    <a href="#" target="_blank">Team Members                        <img id = 'licn' src="./footer_elements/arrow-up-right-circle.svg" class = "icon2"/>    </a>        </li>
+                <li id = 'ltxt'>    <a href="#" target="_blank">Project Description                 <img id = 'licn' src="./footer_elements/arrow-up-right-circle.svg" class = "icon2"/>    </a>        </li>
+                <li id = 'ltxt'>    <a href="#" target="_blank">Project Design                      <img id = 'licn' src="./footer_elements/arrow-up-right-circle.svg" class = "icon2"/>    </a>        </li>
+                <li id = 'ltxt'>    <a href="#" target="_blank">Model                               <img id = 'licn' src="./footer_elements/arrow-up-right-circle.svg" class = "icon2"/>    </a>        </li>
+                <li id = 'ltxt'>    <a href="#" target="_blank">Parts                               <img id = 'licn' src="./footer_elements/arrow-up-right-circle.svg" class = "icon2"/>    </a>        </li>
+                <li id = 'ltxt'>    <a href="#" target="_blank">Proposed Implementation             <img id = 'licn' src="./footer_elements/arrow-up-right-circle.svg" class = "icon2"/>    </a>        </li>
+                <li id = 'ltxt'>    <a href="#" target="_blank">Human Practices                     <img id = 'licn' src="./footer_elements/arrow-up-right-circle.svg" class = "icon2"/>    </a>        </li>
+                <li id = 'ltxt'>    <a href="#" target="_blank">Inclusivity Research                <img id = 'licn' src="./footer_elements/arrow-up-right-circle.svg" class = "icon2"/>    </a>        </li>
+                <li id = 'ltxt'>    <a href="#" target="_blank">Science Communication               <img id = 'licn' src="./footer_elements/arrow-up-right-circle.svg" class = "icon2"/>    </a>        </li>
+                <li id = 'ltxt'>    <a href="#" target="_blank">Biologix Competition                <img id = 'licn' src="./footer_elements/arrow-up-right-circle.svg" class = "icon2"/>    </a>        </li>
+                <li id = 'ltxt'>    <a href="#" target="_blank">Judging Form                        <img id = 'licn' src="./footer_elements/arrow-up-right-circle.svg" class = "icon2"/>    </a>        </li>
                 </ul>
             </div>
             <div class="footer-heading sponsors">
                     <p>Sponsors</p>
                 <ul>
-                <li>    <a href="#" target="_blank">King's College London       </a>        </li>
-                <li>    <a href="#" target="_blank">Wellcome                    </a>        </li>
-                <li>    <a href="#" target="_blank">Promega                     </a>        </li>
-                <li>    <a href="#" target="_blank">KCLSU                       </a>        </li>
-                <li>    <a href="#" target="_blank">BBSRC                       </a>        </li>
-                <li>    <a href="#" target="_blank">SnapGene                    </a>        </li>
-                <li>    <a href="#" target="_blank">Benchling                   </a>        </li>
-                <li>    <a href="#" target="_blank">BGM Lab Tech                </a>        </li>
-                <li>    <a href="#" target="_blank">IDT                         </a>        </li>
+                <li id = 'ltxt'>    <a href="#" target="_blank">King's College London               <img id = 'licn' src="./footer_elements/arrow-up-right-circle.svg" class = "icon2"/>    </a>        </li>
+                <li id = 'ltxt'>    <a href="#" target="_blank">Wellcome                            <img id = 'licn' src="./footer_elements/arrow-up-right-circle.svg" class = "icon2"/>    </a>        </li>
+                <li id = 'ltxt'>    <a href="#" target="_blank">Promega                             <img id = 'licn' src="./footer_elements/arrow-up-right-circle.svg" class = "icon2"/>    </a>        </li>
+                <li id = 'ltxt'>    <a href="#" target="_blank">KCLSU                               <img id = 'licn' src="./footer_elements/arrow-up-right-circle.svg" class = "icon2"/>    </a>        </li>
+                <li id = 'ltxt'>    <a href="#" target="_blank">BBSRC                               <img id = 'licn' src="./footer_elements/arrow-up-right-circle.svg" class = "icon2"/>    </a>        </li>
+                <li id = 'ltxt'>    <a href="#" target="_blank">SnapGene                            <img id = 'licn' src="./footer_elements/arrow-up-right-circle.svg" class = "icon2"/>    </a>        </li>
+                <li id = 'ltxt'>    <a href="#" target="_blank">Benchling                           <img id = 'licn' src="./footer_elements/arrow-up-right-circle.svg" class = "icon2"/>    </a>        </li>
+                <li id = 'ltxt'>    <a href="#" target="_blank">BGM Lab Tech                        <img id = 'licn' src="./footer_elements/arrow-up-right-circle.svg" class = "icon2"/>    </a>        </li>
+                <li id = 'ltxt'>    <a href="#" target="_blank">IDT                                 <img id = 'licn' src="./footer_elements/arrow-up-right-circle.svg" class = "icon2"/>    </a>        </li>
                 </ul>
             </div>
             <div class="social">
-                <a class="renervate-logo" href="#" target="_top"></a>
-                
+                <a class="social-photo renervate-photo" href="#" target="_top"></a>
                 <div class="social-box">
                     <p>Contact Us</p>
                     <ul>
-                        <a href="#" target="_blank"><img class="icon" src="./footer_elements/instagram.svg"></a>                           
-                        <a href="#" target="_blank"><img class="icon" src="./footer_elements/twitter.svg"></a>                             
-                        <a href="#" target="_blank"><img class="icon" src="./footer_elements/facebook.svg"></a>                            
-                        <a href="#" target="_blank"><img class="icon" src="./footer_elements/envelope.svg"></a>
+                <li>        <a href="#" target="_blank"><img class="icon" src="./footer_elements/instagram.svg">    </a> </li>                           
+                <li>        <a href="#" target="_blank"><img class="icon" src="./footer_elements/twitter.svg">      </a> </li>                             
+                <li>        <a href="#" target="_blank"><img class="icon" src="./footer_elements/facebook.svg">     </a> </li>                            
+                <li>        <a href="#" target="_blank"><img class="icon" src="./footer_elements/envelope.svg">     </a> </li>
                     </ul>                               
                 </div>
+                <a class="social-photo team-photo" href="#" target="_top"></a>
+                
             </div>
         </div>
-        <img src = "./footer_elements/longlogo.png" width = "100%" height = "auto" />
         
 
 </div>
