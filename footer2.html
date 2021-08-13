@@ -51,6 +51,12 @@
                 font-size:larger;
             }
 
+            footer {
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+            }
+
             div {
                 margin: 0px;
                 border: 0px;
@@ -79,7 +85,7 @@
             /* Footer element styling */
     
             .footer-container {
-                background-color: coral;
+                background-color: var(--prussian);
                 display: grid;
                 grid-template-rows: repeat( auto-fit , 1fr);
                 grid-template-columns: 100vw;
@@ -98,12 +104,14 @@
     
     
             .link-list {
-                background-color: cornflowerblue;
+                background-color: var(--prussian);
             }
     
     
             .link-header {
-                background-color: darkcyan;
+                color: var(--uranian);
+                margin-bottom: 10px;
+                margin-top:10px;
             }
 
             .link-list ul {
@@ -120,7 +128,7 @@
             }
     
             #link-text {
-                background-color: crimson;
+                background-color: var(--prussian);
             }
     
             #link-text:hover > #link-icon {
