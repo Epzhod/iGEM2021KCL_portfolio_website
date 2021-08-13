@@ -8,55 +8,89 @@
 
         <style>
 
-        /* Fonts added Heebo- variable; ProSans - normal, bold, italic*/
-        @font-face {
-            font-family: Heebo;
-            src: url(./fonts/Heebo-VariableFont_wght.ttf);}
-
-        @font-face {
-            font-family: ProSans;
-            src: url(./fonts/SourceSansPro-Regular.ttf)
-        }
-
-        :root {
+            /* Fonts added Heebo- variable; ProSans - normal, bold, italic*/
+            @font-face {
+                font-family: Heebo;
+                src: url(./fonts/Heebo-VariableFont_wght.ttf);}
+    
+            @font-face {
+                font-family: ProSans;
+                src: url(./fonts/SourceSansPro-Regular.ttf)
+            }
+    
+            :root {
+                
+                /* Defining the 2021 colors in the root as variables*/
+    
+                --pear: #cde43a ;
+                --seagreen: #58bc82 ;
+                --prussian: #13293d;
+                --uranian: #c4e3fd;
+                --dodger: #4895ef;
+                --cobalt: #1446a0;
+            }
+    
+            /* General element styles begin */
             
-            /* Defining the 2021 colors in the root as variables*/
-
-            --pear: #cde43a ;
-            --seagreen: #58bc82 ;
-            --prussian: #13293d;
-            --uranian: #c4e3fd;
-            --dodger: #4895ef;
-            --cobalt: #1446a0;
-        }
-
-        /* General element styles begin */
-        
-        body {
-            margin: 0px;
-            border: 0px;
-            padding: 0px;
-        }
-        
-        
-        h1, h2, h3, h4, h5, h6 {
-            font-family: Heebo;
-        }
-        
-        p {
-            font-family: ProSans;
-            font-size:larger;
-        }
-
-        a:link {color:var(--pear);text-decoration:none;}
-        a:visited {color:var(--pear);text-decoration:none;}
-        a:hover {color: var(--dodger) ;text-decoration:underline;}
-
-
-        /* General element styles end */
-
-        /* Footer element styling */
-    </style>
+            body {
+                margin: 0px;
+                border: 0px;
+                padding: 0px;
+            }
+            
+            
+            h1, h2, h3, h4, h5, h6 {
+                font-family: Heebo;
+            }
+            
+            p {
+                font-family: ProSans;
+                font-size:larger;
+            }
+    
+            a:link {color:var(--pear);text-decoration:none;}
+            a:visited {color:var(--pear);text-decoration:none;}
+            a:hover {color: var(--dodger) ;text-decoration:underline;}
+    
+    
+            /* General element styles end */
+    
+            /* Footer element styling */
+    
+            .footer-container {
+                background-color: coral;
+            }
+    
+    
+            /* Link list element styling */
+    
+    
+            .link-list {
+                background-color: cornflowerblue;
+            }
+    
+    
+            .link-header {
+                background-color: darkcyan;
+            }
+    
+            #link-text {
+                background-color: crimson;
+            }
+    
+            #link-text:hover > #link-icon {
+                filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+            }
+    
+    
+    
+    
+    
+    
+    
+            
+        </style>
+    
 
 </head>
 <body>
@@ -72,27 +106,27 @@
                 <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
             </li>
 
-            <li class="" id="link-text">
+            <li id="link-text">
                 <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
             </li>
 
-            <li class="" id="link-text">
+            <li id="link-text">
                 <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
             </li>
 
-            <li class="" id="link-text">
+            <li id="link-text">
                 <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
             </li>
 
-            <li class="" id="link-text">
+            <li id="link-text">
                 <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
             </li>
 
-            <li class="" id="link-text">
+            <li id="link-text">
                 <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
             </li>
 
-            <li class="" id="link-text">
+            <li id="link-text">
                 <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
             </li>
 
