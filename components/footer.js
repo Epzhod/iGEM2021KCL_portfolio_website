@@ -164,6 +164,7 @@ footerTemplate.innerHTML = `
 
 
             .social-box{
+                padding-top: 15px;
                 grid-row: span 1;
                 display: flex;
                 flex-direction: column;
