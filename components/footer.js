@@ -90,7 +90,7 @@ footerTemplate.innerHTML = `
                 grid-row: span 6;
                 display: grid;
                 gap: 0.5rem;
-                grid-template-columns: repeat( auto-fit , minmax(240px, 1fr));
+                grid-template-columns: repeat( auto-fill , minmax(240px, 1fr));
                 justify-content: space-evenly;
             }
 
