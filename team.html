@@ -54,25 +54,53 @@
     /* Specific element stylings */
 
 
+    .container {
+        background-color: burlywood;
+    }
 
+    .top-placeholder {
+        background-color: chocolate;
+    }
 
+    .bottom-placeholder {
+        background-color: coral;
+    }
 
+    .middle-container {
+        background-color: darkblue;
+        display:flex;
+        flex-direction: column;
+    }
+
+    .info-page {
+        flex:content;
+        background-color: darkgreen;
+    }
+
+    .button-grid {
+        flex: content;
+        background-color: deeppink;
+    }
 
 </style>
-
 
 </head>
 <body>
 
     <div class="container">
-        <div class="top-placeholder"></div>
-        
-        <div class="middle-container">
-            <div class="info-page"></div>
-            <div class="button-grid"></div>
+        <div class="top-placeholder">
+            <h1> Random Text </h1>
+
         </div>
         
-        <div class="bottom-paceholder"></div>
+        <div class="middle-container">
+            <div class="info-page">Random</div>
+            <div class="button-grid">Random</div>
+        </div>
+        
+        <div class="bottom-placeholder">
+            <h1>Random Text</h1>
+        </div>
     </div>
 
 
