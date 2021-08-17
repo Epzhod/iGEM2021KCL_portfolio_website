@@ -82,6 +82,17 @@
         background-color: deeppink;
     }
 
+    #big {
+        width: 300px;
+        height: 200px
+    }
+
+    .team-select {
+        width: 100px;
+        height: 100px;
+    }
+
+
 </style>
 
 </head>
@@ -95,7 +106,16 @@
         
         <div class="middle-container">
             <div class="info-page">Random</div>
-            <div class="button-grid">Random</div>
+            <img id = "big" src="team/Big1.PNG"/>
+            <div class="button-grid">
+                
+                <button onclick="document.getElementById('big').src='./team/Big1.PNG'"><img class = 'team-select select-icon' src = "./team/Small1.PNG"/></button>
+                <button onclick="document.getElementById('big').src='./team/Big2.PNG'"><img class = 'team-select select-icon' src = "./team/Small2.PNG"/></button>
+                <button onclick="document.getElementById('big').src='./team/Big3.PNG'"><img class = 'team-select select-icon' src = "./team/Small3.PNG"/></button>
+                <button onclick="document.getElementById('big').src='./team/Big4.PNG'"><img class = 'team-select select-icon' src = "./team/Small4.PNG"/></button>
+                
+                
+            </div>
         </div>
         
         <div class="bottom-placeholder">
