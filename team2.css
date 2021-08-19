@@ -60,6 +60,7 @@ a:visited {
     width: 75%;
     background: black;
     padding: 1em;
+    position: relative;
 }
 
 
@@ -68,25 +69,40 @@ a:visited {
     justify-content: space-between;
     align-content: center;
     gap: 1em;
+    padding: 1em;
 }
 
-.close {
-    width: 3em;
-    height: 3em;
-    background: red;
-
-}
 
 .last {
-    width: 3em;
-    height: 3em;
-    background: red;
+    width: 2em;
+    height: 2em;
+    background: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40%;
+    font-size: 1.5rem;
 
 }
-.next {
-    width: 3em;
-    height: 3em;
+.close {
+    width: 2em;
+    height: 2em;
     background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40%;
+    font-size: 1.5rem;
+}
+.next {
+    width: 2em;
+    height: 2em;
+    background: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40%;
+    font-size: 1.5rem;
 }
 
 .big {
@@ -94,7 +110,7 @@ a:visited {
     display: block;
     margin-left: auto;
     margin-right: auto;
-
+    width: clamp(200px, 600px, 800px);
 }
 
 .portfolio-lightbox__title {
@@ -103,4 +119,5 @@ a:visited {
 
 .portfolio-lightbox__body {
     text-align: center;
+    padding-bottom: 2em;
 }
