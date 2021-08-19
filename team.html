@@ -2,131 +2,174 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Page Example</title>
-
-
-<style>
-    /* Fonts added Heebo- variable; ProSans - normal, bold, italic*/
-    @font-face {
-        font-family: Heebo;
-        src: url(./fonts/Heebo-VariableFont_wght.ttf);}
-
-    @font-face {
-        font-family: ProSans;
-        src: url(./fonts/SourceSansPro-Regular.ttf)
-    }
-
-    :root {
-        
-        /* Defining the 2021 colors in the root as variables*/
-
-        --pear: #cde43a ;
-        --seagreen: #58bc82 ;
-        --prussian: #13293d;
-        --uranian: #c4e3fd;
-        --dodger: #4895ef;
-        --cobalt: #1446a0;
-    }
-
-    /* General element styles begin */
-    
-    body {
-        margin: 0px;
-        border: 0px;
-        padding: 0px;
-    }
-    
-    
-    h1, h2, h3, h4, h5, h6 {
-        font-family: Heebo;
-        margin: 0px;
-        border: 0px;
-        padding: 0px;
-    }
-    
-    p {
-        font-family: ProSans;
-        font-size:larger;
-    }
-
-
-    /* Specific element stylings */
-
-
-    .container {
-        background-color: burlywood;
-    }
-
-    .top-placeholder {
-        background-color: chocolate;
-    }
-
-    .bottom-placeholder {
-        background-color: coral;
-    }
-
-    .middle-container {
-        background-color: darkblue;
-        display:flex;
-        flex-direction: column;
-    }
-
-    .info-page {
-        flex:content;
-        background-color: darkgreen;
-    }
-
-    .button-grid {
-        flex: content;
-        background-color: deeppink;
-    }
-
-    #big {
-        width: 300px;
-        height: 200px
-    }
-
-    .team-select {
-        width: 100px;
-        height: 100px;
-    }
-
-
-</style>
-
+    <title>Team 2</title>
+    <link rel="stylesheet" href="team2.css">
 </head>
 <body>
+    
 
-    <div class="container">
-        <div class="top-placeholder">
-            <h1> Random Text </h1>
+
+    <!-- Portfolio container -->
+
+    <div class="portfolio">
+
+
+        <!-- Portfolio 1 -->
+
+        <div class="portfolio__item">
+            <a href="#portfolio-item-1" class="button">
+                <img src="./team/Bob_small.png" alt="Bob" class="small">
+                <div class="portfolio__desc">
+                    <h3 class="portfolio__title">Bob</h3>
+                    <h4 class="portfolio__subtitle">Senior Bob</h4>
+                </div>
+            </a>
+        </div>
+
+
+        <!-- Portfolio 2 -->
+
+        <div class="portfolio__item">
+            <a href="#portfolio-item-2" class="button">
+                <img src="./team/Jane_small.png" alt="Jane" class="small">
+                <div class="portfolio__desc">
+                    <h3 class="portfolio__title">Jane</h3>
+                    <h4 class="portfolio__subtitle">Senior Jane</h4>
+                </div>
+            </a>
+        </div>
+
+
+        <!-- Portfolio 3 -->
+
+        <div class="portfolio__item">
+            <a href="#portfolio-item-3" class="button">
+                <img src="./team/Jim_small.png" alt="Jim" class="small">
+                <div class="portfolio__desc">
+                    <h3 class="portfolio__title">Jim</h3>
+                    <h4 class="portfolio__subtitle">Senior Jim</h4>
+                </div>
+            </a>
+        </div>
+
+
+        <!-- Portfolio 4 -->
+
+        <div class="portfolio__item">
+            <a href="#portfolio-item-4" class="button">
+                <img src="./team/Sally_small.png" alt="Sally" class="small">
+                <div class="portfolio__desc">
+                    <h3 class="portfolio__title">Sally</h3>
+                    <h4 class="portfolio__subtitle">Senior Sally</h4>
+                </div>
+            </a>
+        </div>
+
+
+
+        <!-- Lighbox Container -->
+        
+        <div class="portfolio-lightboxes">
+
+
+            <!-- Lightbox 1 -->
+
+            <div class="portfolio-lightbox" id = 'portfolio-item-1'>
+            <div class="portfolio-lightbox__content">
+                <div class="portfolio-lightbox__nav">
+
+                <a href="#portfolio-item-4" class="last">  &lt;    </a>
+                <a href="#" class="close"> &empty; </a>
+                <a href="#portfolio-item-2" class="next">  &gt;    </a>
+
+                </div>
+                <img src="./team/Bob_big.png" alt="Bob" class="big">
+                <h3 class="portfolio-lightbox__title">Bob Burgerson</h3>
+                <p class="portfolio-lightbox__body">
+                    Lipsum Lorem ipsum dolor sit amet consectetur adipisicing elit;
+                    Neque debitis in consectetur quo nostrum voluptate corporis de altes.
+                    Lipsum Lorem ipsum dolor sit amet consectetur adipisicing elit;
+                    Neque debitis in consectetur quo nostrum voluptate corporis de altes.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates libero maiores tempora quam quos impedit quisquam ratione enim, dolores commodi saepe consequatur explicabo nam accusantium deserunt. Accusantium sit nobis dolor.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quisquam dolorum temporibus quaerat facere est sed magni tempora, eligendi adipisci voluptatibus molestias sequi a aspernatur et alias iste ut blanditiis.
+                </p>
+            </div></div>
+
+
+            <!-- Lightbox 2 -->
+
+            <div class="portfolio-lightbox" id = 'portfolio-item-2'>
+            <div class="portfolio-lightbox__content">
+                <div class="portfolio-lightbox__nav">
+
+                <a href="#portfolio-item-1" class="last">  &lt;    </a>
+                <a href="#" class="close"> &empty; </a>
+                <a href="#portfolio-item-3" class="next">  &gt;    </a>
+
+                </div>
+                <img src="./team/Jane_big.png" alt="Jane" class="big">
+                <h3 class="portfolio-lightbox__title">Jane Jamazing</h3>
+                <p class="portfolio-lightbox__body">
+                    Lipsum Lorem ipsum dolor sit amet consectetur adipisicing elit;
+                    Neque debitis in consectetur quo nostrum voluptate corporis de altes.
+                    Lipsum Lorem ipsum dolor sit amet consectetur adipisicing elit;
+                    Neque debitis in consectetur quo nostrum voluptate corporis de altes.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates libero maiores tempora quam quos impedit quisquam ratione enim, dolores commodi saepe consequatur explicabo nam accusantium deserunt. Accusantium sit nobis dolor.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quisquam dolorum temporibus quaerat facere est sed magni tempora, eligendi adipisci voluptatibus molestias sequi a aspernatur et alias iste ut blanditiis.
+                </p>
+            </div></div>
+
+
+            <!-- Lightbox 3 -->
+
+            <div class="portfolio-lightbox" id = 'portfolio-item-3'>
+            <div class="portfolio-lightbox__content">
+                <div class="portfolio-lightbox__nav">
+
+                <a href="#portfolio-item-3" class="last">  &lt;    </a>
+                <a href="#" class="close"> &empty; </a>
+                <a href="#portfolio-item-4" class="next">  &gt;    </a>
+
+                </div>
+                <img src="./team/Jim_big.png" alt="Jim" class="big">
+                <h3 class="portfolio-lightbox__title">Jim JommyJom</h3>
+                <p class="portfolio-lightbox__body">
+                    Lipsum Lorem ipsum dolor sit amet consectetur adipisicing elit;
+                    Neque debitis in consectetur quo nostrum voluptate corporis de altes.
+                    Lipsum Lorem ipsum dolor sit amet consectetur adipisicing elit;
+                    Neque debitis in consectetur quo nostrum voluptate corporis de altes.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates libero maiores tempora quam quos impedit quisquam ratione enim, dolores commodi saepe consequatur explicabo nam accusantium deserunt. Accusantium sit nobis dolor.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quisquam dolorum temporibus quaerat facere est sed magni tempora, eligendi adipisci voluptatibus molestias sequi a aspernatur et alias iste ut blanditiis.
+                </p>
+            </div></div>
+
+
+            <!-- Lightbox 4 -->
+            
+            <div class="portfolio-lightbox" id = 'portfolio-item-4'>
+            <div class="portfolio-lightbox__content" >
+                <div class="portfolio-lightbox__nav">              
+                <a href="#portfolio-item-3" class="last">  &lt;    </a>
+                <a href="#" class="close"> &empty; </a>
+                <a href="#portfolio-item-1" class="next">  &gt;    </a>
+                </div>
+                <img src="./team/Sally_big.png" alt="Sally" class="big">
+                <h3 class="portfolio-lightbox__title">Sally Solicitor</h3>
+                <p class="portfolio-lightbox__body">
+                    Lipsum Lorem ipsum dolor sit amet consectetur adipisicing elit;
+                    Neque debitis in consectetur quo nostrum voluptate corporis de altes.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates libero maiores tempora quam quos impedit quisquam ratione enim, dolores commodi saepe consequatur explicabo nam accusantium deserunt. Accusantium sit nobis dolor.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quisquam dolorum temporibus quaerat facere est sed magni tempora, eligendi adipisci voluptatibus molestias sequi a aspernatur et alias iste ut blanditiis.
+                </p>
+            </div></div>
+
 
         </div>
-        
-        <div class="middle-container">
-            <div class="info-page">Random</div>
-            <img id = "big" src="team/Big1.PNG"/>
-            <div class="button-grid">
-                
-                <button onclick="document.getElementById('big').src='./team/Big1.PNG'"><img class = 'team-select select-icon' src = "./team/Small1.PNG"/></button>
-                <button onclick="document.getElementById('big').src='./team/Big2.PNG'"><img class = 'team-select select-icon' src = "./team/Small2.PNG"/></button>
-                <button onclick="document.getElementById('big').src='./team/Big3.PNG'"><img class = 'team-select select-icon' src = "./team/Small3.PNG"/></button>
-                <button onclick="document.getElementById('big').src='./team/Big4.PNG'"><img class = 'team-select select-icon' src = "./team/Small4.PNG"/></button>
-                
-                
-            </div>
-        </div>
-        
-        <div class="bottom-placeholder">
-            <h1>Random Text</h1>
-        </div>
+
     </div>
 
 
-
-
-
-    
 </body>
 </html>
