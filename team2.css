@@ -1,0 +1,94 @@
+body {
+    margin: 0px;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-gap: 1em;
+    padding: 5em;
+    background-color: lightgray;
+    
+}
+
+.portfolio__item {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio__desc {
+    padding: 1.25em;
+    text-align: center;
+}
+
+.portfolio__title {
+    font-size: 1.5em;
+    margin-top: 0;
+
+}
+
+.portfolio-lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-lightbox__content {
+    width: 75%;
+    background: black;
+    padding: 1em;
+}
+
+
+.portfolio-lightbox__nav{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 1em;
+}
+
+.close {
+    width: 3em;
+    height: 3em;
+    background: red;
+
+}
+
+.last {
+    width: 3em;
+    height: 3em;
+    background: red;
+
+}
+.next {
+    width: 3em;
+    height: 3em;
+    background: red;
+}
+
+.big {
+    padding-top: 1em;
+}
