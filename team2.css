@@ -51,10 +51,16 @@ a:visited {
     height: 100vh;
     background: rgba(0,0,0,0.5);
     color: white;
-    display: flex;
     align-items: center;
     justify-content: center;
+    display: none;
 }
+
+.portfolio-lightbox:target {
+    display: flex;
+}
+
+
 
 .portfolio-lightbox__content {
     width: 75%;
