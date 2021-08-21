@@ -1,0 +1,55 @@
+body {
+    margin:0;
+}
+
+.portfolio__container {
+    background-color: gray;
+}
+
+.team-leaders {
+    display: grid;
+    grid-template-areas: 
+    'a a'
+    'b c';
+    background-color:lightblue;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 800px) {
+    .team-leaders{
+        grid-template-areas:
+        'a'
+        'b'
+        'c';
+    }
+}
+
+
+.team-leaders>h2 {
+    grid-area: a;
+    text-align: center;
+}
+
+.leader{
+    text-align: center;
+
+}
+
+.Alya {
+    grid-area: b;
+}
+
+.Luke {
+    grid-area: c;
+}
+
+.team-groups {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.section {
+    text-align: center;
+}
