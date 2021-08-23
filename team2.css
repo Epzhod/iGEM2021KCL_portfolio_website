@@ -1,31 +1,44 @@
-
-.portfolio-lightbox {
-    display:none;
-}
-
 body {
     margin:0;
 }
 
+img {
+    max-width: 100%;
+}
+
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
 .portfolio__container {
     background-color: gray;
+    padding: 1.5em;
 }
 
 .team-leaders {
     display: grid;
     grid-template-areas: 
-    'a a'
-    'b c';
+    'a a a a'
+    'b b c c';
     background-color:lightblue;
     justify-content: space-around;
+    padding-bottom: 0.5em;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
     .team-leaders{
         grid-template-areas:
-        'a'
-        'b'
-        'c';
+        'a a'
+        'b b'
+        'c c';
+        gap:0.5em;
     }
 }
 
@@ -37,7 +50,11 @@ body {
 
 .leader{
     text-align: center;
+    background: gray;
+}
 
+.leader > .portfolio__item {
+    background: blue;
 }
 
 .Alya {
@@ -53,8 +70,148 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: space-around;
     align-items: baseline;
+    gap: 1em;
 }
 
 .section {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+
+.portfolio__item {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio__desc {
+    padding: 1.25em;
+    text-align: center;
+}
+
+.portfolio__title {
+    font-size: 1.5em;
+    margin-top: 0;
+
+}
+
+.small {
+    padding: 1em;
+}
+
+
+
+.portfolio-lightbox {
+position: fixed;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+background: rgba(0,0,0,0.5);
+color: white;
+align-items: center;
+justify-content: center;
+display: none;
+}
+
+.portfolio-lightbox:target {
+display:flex;
+}
+
+.portfolio-lightbox__content {
+    width: 75%;
+    background: black;
+    padding: 1em;
+    position: relative;
+    display: grid;
+    grid-template-areas: 
+    'nav nav'
+    'img title'
+    'img txt'
+    'img txt';
+}
+
+@media only screen and (max-width: 600px) {
+    .portfolio-lightbox__content {
+        grid-template-areas:
+        'nav'
+        'img'
+        'title'
+        'txt';
+    }
+    .portfolio-lightbox__content > img {
+        display: none;
+    }
+}
+
+
+.portfolio-lightbox__nav{
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 1em;
+    padding: 1em;
+}
+
+
+.last {
+    width: 2em;
+    height: 2em;
+    background: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40%;
+    font-size: 1.5rem;
+
+}
+.close {
+    width: 2em;
+    height: 2em;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40%;
+    font-size: 1.5rem;
+}
+.next {
+    width: 2em;
+    height: 2em;
+    background: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40%;
+    font-size: 1.5rem;
+}
+
+.big {
+    grid-area: img;
+    padding-top: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: clamp(200px, 50%, 600px);
+    height: 400px;
+}
+
+.portfolio-lightbox__title {
+    grid-area:title;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 7px;
+}
+
+.portfolio-lightbox__body {
+    grid-area: txt;
+    text-align: center;
+    margin-top: -20px;
+    align-self: baseline;
 }
