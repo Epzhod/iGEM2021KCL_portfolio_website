@@ -25,8 +25,8 @@ a:visited {
 .team-leaders {
     display: grid;
     grid-template-areas: 
-    'a a a a'
-    'b b c c';
+    'a a a a a a'
+    'b b b c c c';
     background-color:lightblue;
     justify-content: space-around;
     padding-bottom: 0.5em;
@@ -71,7 +71,7 @@ a:visited {
     align-items: baseline;
     gap: 1em;
     grid-auto-rows: auto;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
 }
 
 
