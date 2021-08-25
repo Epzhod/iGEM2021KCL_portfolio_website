@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Codon Optimizer</title>
+        <meta name="description" content="Codon Optimizer Javascript">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style>
+    
+    body {
+        margin: 0px;
+        background: lightgreen;
+    }
+
+
+    
+    
+    
+    
+    
+    
+    
+    </style>
+        
+        
+        
+    </head>
+
+
+    <body>
+
+    <div class="content">
+
+
+        <form>
+
+            <h2>Text Input</h2>
+            <input type="button" value="Translate" onclick="translator()">
+            <input type="textarea" id="txtInput">
+            <p type="text" id= "txtOutput"></p>
+
+
+        </form>
+    
+    
+    
+
+    
+    </div>
+
+    <script>
+
+        var TRANSDICT = 
+            {
+                    // Dictionary of the most used codon for each amino acid for E.coli.",
+                    // Referenced on 29/06/2021 from : https://www.genscript.com/tools/codon-frequency-table",
+    
+                    "L" : "CTG", // leucine",
+                    "F" : "TTT", // phenylalanine",
+                    "Y" : "TAT", // tyrosine",
+                    "*" : "TAA", // stop codon",
+                    "H" : "CAT", // histidine",
+                    "Q" : "CAG", // glutamine",
+                    "I" : "ATT", // isoleucine",
+                    "M" : "ATG", // methionine [start codon]",
+                    "N" : "AAC", // asparagine",
+                    "K" : "AAA", // lysine",
+                    "V" : "GTG", // valine",
+                    "D" : "GAT", // aspartate / aspartic acid",
+                    "E" : "GAA", // glutamate / glutamic acid",
+                    "S" : "AGC", // serine",
+                    "C" : "TGC", // cysteine",
+                    "W" : "TGG", // tryptophan",
+                    "P" : "CCG", // proline",
+                    "R" : "CGT", // arginine",
+                    "T" : "ACC", // threonine",
+                    "A" : "GCC", // alanine",
+                    "G" : "GGC"  // glycine",
+        }
+
+        var KEYS = ['A','C','D','E','F','G','H','I','K','L','M','N','P','Q','R','S','T','V','W','Y', '*'];
+
+
+        function translator() {
+            var input = document.getElementById('txtInput').value;
+            
+            input = input.toUpperCase();
+            input = input.replace(/\s/g, '');
+            var codons = input.split("");
+
+
+            for (let i = 0; i < KEYS.length; i++) {
+                
+                }
+
+
+            console.log(codons);
+
+            var translated = codons.map( n => TRANSDICT[n]);
+
+            console.log(translated);
+
+            
+
+
+
+            document.getElementById("txtOutput").innerHTML = input;
+        }
+    </script>
+
+    </body>
+</html>
