@@ -1,6 +1,6 @@
             {
                    'comment': ' // Dictionary of the most used codon for each amino acid for E.coli.,
-                    // Referenced on 29/06/2021 from : https://www.genscript.com/tools/codon-frequency-table'
+                    // Referenced on 29/06/2021 from : https://www.genscript.com/tools/codon-frequency-table',
     
                     "L" : "CTG", 
                     "F" : "TTT", 
