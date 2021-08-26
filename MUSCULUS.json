@@ -1,6 +1,6 @@
 { 
 
-"comment" : " Dictionary of the most used codon for each amino acid for Homo Sapiens using data from NCBI Taxonomy 26/08/2021",
+"comment" : " Dictionary of the most used codon for each amino acid for Mus musculus using data from NCBI Taxonomy 26/08/2021",
     
                     "L" : "CTG", 
                     "F" : "TTC", 
