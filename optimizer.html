@@ -51,33 +51,7 @@
 
     <script>
 
-        var TRANSDICT = 
-            {
-                    // Dictionary of the most used codon for each amino acid for E.coli.",
-                    // Referenced on 29/06/2021 from : https://www.genscript.com/tools/codon-frequency-table",
-    
-                    "L" : "CTG", // leucine",
-                    "F" : "TTT", // phenylalanine",
-                    "Y" : "TAT", // tyrosine",
-                    "*" : "TAA", // stop codon",
-                    "H" : "CAT", // histidine",
-                    "Q" : "CAG", // glutamine",
-                    "I" : "ATT", // isoleucine",
-                    "M" : "ATG", // methionine [start codon]",
-                    "N" : "AAC", // asparagine",
-                    "K" : "AAA", // lysine",
-                    "V" : "GTG", // valine",
-                    "D" : "GAT", // aspartate / aspartic acid",
-                    "E" : "GAA", // glutamate / glutamic acid",
-                    "S" : "AGC", // serine",
-                    "C" : "TGC", // cysteine",
-                    "W" : "TGG", // tryptophan",
-                    "P" : "CCG", // proline",
-                    "R" : "CGT", // arginine",
-                    "T" : "ACC", // threonine",
-                    "A" : "GCC", // alanine",
-                    "G" : "GGC"  // glycine",
-        }
+        var TRANSDICT = require('./ECOLI.json')
 
         var KEYS = ['A','C','D','E','F','G','H','I','K','L','M','N','P','Q','R','S','T','V','W','Y', '*'];
 
