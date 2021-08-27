@@ -78,7 +78,6 @@
 
         function translator() {
             var input = document.getElementById('txtInput').value;
-            var output = input;
             let dict_label = document.getElementById('codons').value;
 
             input = input.toUpperCase();
@@ -88,12 +87,13 @@
             for (var i = 0; i < codons.length; i++) {
             // checks if protein input matches keys
                 var valid = KEYS.includes(codons[i]);
-                console.log(codons[i], valid);
                 if (!valid) {
                     document.getElementById("txtOutput").innerHTML = 'Invalid Value!';
                     throw new Error('Invalid Value!');
                 }
             };
+
+            var TRANSDICT = {}
 
             if (dict_label == 'ECOLI') {
                 TRANSDICT = ECOLI;
@@ -108,12 +108,20 @@
                 TRANSDICT = SAPIENS;
             };
 
-            console.log(TRANSDICT);
+            var output = []
 
+            for (var i = 0; i < codons.length; i++) {
+                output[i] = TRANSDICT[codons[i]]
+            };
 
+            output = output.join("");
 
-
-            document.getElementById("txtOutput").innerHTML = output;
+            if (input.endsWith('*')) {
+                document.getElementById("txtOutput").innerHTML = output;
+            }
+            else {
+                document.getElementById("txtOutput").innerHTML = 'No stop codon! \n' + "<br>" + "<br>" + output;
+            };
     };
 
     </script>
