@@ -78,13 +78,42 @@
 
         function translator() {
             var input = document.getElementById('txtInput').value;
+            var output = input;
+            let dict_label = document.getElementById('codons').value;
 
             input = input.toUpperCase();
             input = input.replace(/\s/g, '');
             let codons = input.split("");
 
-            
-            document.getElementById("txtOutput").innerHTML = input;
+            for (var i = 0; i < codons.length; i++) {
+            // checks if protein input matches keys
+                var valid = KEYS.includes(codons[i]);
+                console.log(codons[i], valid);
+                if (!valid) {
+                    document.getElementById("txtOutput").innerHTML = 'Invalid Value!';
+                    throw new Error('Invalid Value!');
+                }
+            };
+
+            if (dict_label == 'ECOLI') {
+                TRANSDICT = ECOLI;
+            }
+            else if (dict_label == 'DROSOPHILA') {
+                TRANSDICT = DROSOPHILA;
+            }
+            else if (dict_label == 'MUSCULUS') {
+                TRANSDICT = MUSCULUS;
+            }
+            else if (dict_label == 'SAPIENS') {
+                TRANSDICT = SAPIENS;
+            };
+
+            console.log(TRANSDICT);
+
+
+
+
+            document.getElementById("txtOutput").innerHTML = output;
     };
 
     </script>
