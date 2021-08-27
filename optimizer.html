@@ -5,6 +5,8 @@
         <title>Codon Optimizer</title>
         <meta name="description" content="Codon Optimizer Javascript">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="DICT.js"></script>
     
     <style>
     
@@ -12,6 +14,13 @@
         margin: 0px;
         background: lightgreen;
     }
+
+
+    #txtOutput {
+        background-color: blanchedalmond;
+        color: black;
+    }
+
 
 
     
@@ -36,8 +45,23 @@
         <form>
 
             <h2>Text Input</h2>
-            <input type="button" value="Translate" onclick="translator()">
+            
             <input type="textarea" id="txtInput">
+            
+            <label for="codons">Choose an organism:</label>
+
+                <select name="codons" id="codons">
+                  <option value="ECOLI">        Escherichia Coli            </option>
+                  <option value="DROSOPHILA">   Drosophila melanogaster     </option>
+                  <option value="MUSCULUS">     Mus musculus                </option>
+                  <option value="SAPIENS">      Homo sapines                </option>
+                </select>
+
+
+
+
+
+            <input type="button" value="Translate" onclick="translator()">
             <p type="text" id= "txtOutput"></p>
 
 
@@ -51,33 +75,18 @@
 
     <script>
 
-        var TRANSDICT = require('./ECOLI.json')
-
-        var KEYS = ['A','C','D','E','F','G','H','I','K','L','M','N','P','Q','R','S','T','V','W','Y', '*'];
-
 
         function translator() {
             var input = document.getElementById('txtInput').value;
-            
+
             input = input.toUpperCase();
             input = input.replace(/\s/g, '');
-            var codons = input.split("");
-
-            console.log(TRANSDICT);
-
-
-            console.log(codons);
-
-            var translated = codons.map( n => TRANSDICT[n]);
-
-            console.log(translated);
+            let codons = input.split("");
 
             
-
-
-
             document.getElementById("txtOutput").innerHTML = input;
-        }
+    };
+
     </script>
 
     </body>
