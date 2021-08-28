@@ -118,18 +118,17 @@ display:flex;
 }
 
 .portfolio-lightbox__content {
-    width: 75%;
+    width: 81%;
+    height: auto;
     background: black;
-    padding: 1em;
+    padding: 1vw;
     position: relative;
     display: grid;
-    grid-template-areas: 
-    'nav nav'
-    'img title'
-    'img txt'
-    'img txt';
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    justify-content: center;
+    align-content: space-around;
 }
-
 /*
 @media only screen and (max-width: 600px) {
     .portfolio-lightbox__content {
@@ -146,71 +145,68 @@ display:flex;
 */
 
 .portfolio-lightbox__nav{
-    grid-area: nav;
+    grid-area: 1/1/span 1/span 3;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    justify-items:center;
     align-content: center;
-    gap: 1em;
-    padding: 1em;
+    gap: 1vw;
+    padding: 1vh;
 }
 
 
 .last {
     color: white;
-    width: 2em;
-    height: 2em;
+    width: 5vw;
+    height: 5vw;
     background: blue;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 40%;
-    font-size: 1.5rem;
+    font-size: 3vw;
 
 }
 .close {
     color: white;
-    width: 2em;
-    height: 2em;
+    width: 5vw;
+    height: 5vw;
     background: red;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 40%;
-    font-size: 1.5rem;
+    font-size: 3vw;
 }
 .next {
     color: white;
-    width: 2em;
-    height: 2em;
+    width: 5vw;
+    height: 5vw;
     background: blue;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 40%;
-    font-size: 1.5rem;
+    font-size: 3vw;
 }
 
 .big {
-    grid-area: img;
-    padding-top: 1em;
+    grid-area: 3/ 1/ span 1/ span 1;
+    margin-bottom: 1vh;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: clamp(200px, 50%, 600px);
-    height: 400px;
+    width: clamp(100px, 60vh, 400px);
+    height: auto;
 }
 
 .portfolio-lightbox__title {
-    grid-area:title;
+    grid-area: 2/2/span 1/span 2;
     text-align: center;
-    height: 40px;
-    margin-bottom: 7px;
+    font-size: 2vw;
 }
 
 .portfolio-lightbox__body {
-    grid-area: txt;
+    grid-area: 3/2/span 1/span 2;
     text-align: center;
-    margin-top: -20px;
     align-self: baseline;
     font-size: 1vw;
 }
