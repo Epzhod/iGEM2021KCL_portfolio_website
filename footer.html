@@ -13,10 +13,6 @@
                 font-family: Heebo;
                 src: url(./fonts/Heebo-VariableFont_wght.ttf);}
     
-            @font-face {
-                font-family: ProSans;
-                src: url(./fonts/SourceSansPro-Regular.ttf)
-            }
     
             :root {
                 
@@ -46,13 +42,13 @@
                 --footer-container-background: var(--prussian);
                 --link-list-background: var(--prussian);
                 --link-text-background:var(--prussian);
-                --link-header-color: var(--uranian);
+                --link-header-color: #ecf1f5;;
                 --link-hover-change:var(--dodger);
                 --icon-color-change: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
                 --social-icon-border-color: white;
                 --social-icon-color: invert(100%) sepia(0%) saturate(7500%) hue-rotate(178deg) brightness(108%) contrast(101%);
                 --social-icon-hover-color: invert(63%) sepia(49%) saturate(374%) hue-rotate(92deg) brightness(92%) contrast(96%);
-                --sponsor-icon-color: grayscale(80%);
+                --sponsor-icon-color: grayscale(100%);
                 --sponsor-icon-hover: none;
 
             }
@@ -116,12 +112,13 @@
             }
     
             .link-multiple{
-                display: flex;
+                padding-top: 2vw;
                 gap: 0.5rem;
-                flex-direction: row;
-                justify-content: space-evenly;
+                justify-content: space-around;
                 align-items: baseline;
-                padding-left: 10vw;
+                display:grid;
+                grid-template-columns: 15vw 25vw 20vw;
+                grid-auto-rows: auto;
             }
 
 
@@ -129,7 +126,6 @@
     
     
             .link-list {
-                flex: 1;
                 background-color: var(--link-list-background);
             }
     
@@ -171,18 +167,19 @@
                 margin: 0px;
                 border: 0px;
                 padding: 0px;
-                width: 50vw;
+                width: 45vw;
+                font-family: Heebo-Thin, Heebo;
 
             }
 
             .icon {
-                width: 2.5vw;
-                height: 2.5vw;
+                width: 2.25vw;
+                height: 2.25vw;
                 filter: var(--social-icon-color);
                 border-style: none;
                 border-color: var(--social-icon-border-color);
-                padding: 0.3rem;
-                border-width: 0.1rem;
+                padding: 0.3vw;
+                border-width: 0.1vw;
             }
 
             .icon:hover {
@@ -278,27 +275,27 @@
     <div class="link-multiple">
 
 
-        <div class="link-list">
+        <div class="link-list small-text-column">
             <ul>
                 <h3 class="link-header">Project</h3>
                 <li class="" id="link-text">
-                    <a href="" class="link-page"> Description </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Description </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Design </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Design </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Model </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Model </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Parts </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Parts </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Judging Form </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Judging Form </a> 
                 </li>
     
             </ul>
@@ -308,19 +305,19 @@
             <ul>
                 <h3 class="link-header">Human Practices</h3>
                 <li class="" id="link-text">
-                    <a href="" class="link-page"> Integrated Human Practices </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Integrated Human Practices </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Enterpreneurship </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Enterpreneurship </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Inclusivity Research </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Inclusivity Research </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Biologix Competition </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Biologix Competition </a> 
                 </li>
     
             </ul>
@@ -331,15 +328,15 @@
             <ul>
                 <h3 class="link-header"> Team </h3>
                 <li class="" id="link-text">
-                    <a href="" class="link-page"> Members </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Members </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Attributions </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Attributions </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Collaborations </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Collaborations </a> 
                 </li>
     
             </ul>
@@ -365,7 +362,7 @@
 
     <div class="sponsor">
         <ul>
-    <li>        <a href="#" target="_blank"><img class="sponsor-icon" src="./sponsors/Kings_College_London-logo-B1996FD9A6-seeklogo.com.png"  alt="King's College London"   />   </a> </li>                           
+    <li>        <a href="#" target="_blank"><img class="sponsor-icon" src="./sponsors/kcl.png"  alt="King's College London"   />   </a> </li>                           
     <li>        <a href="#" target="_blank"><img class="sponsor-icon" src="./sponsors/wellcome.png"  alt="Wellcome"   />   </a> </li>                             
     <li>        <a href="#" target="_blank"><img class="sponsor-icon" src="./sponsors/Promega_Logo-2.png"  alt="Promega"   />   </a> </li>                            
     <li>        <a href="#" target="_blank"><img class="sponsor-icon" src="./sponsors/kclsu_logo.png"  alt="KCLSU"   />   </a> </li>

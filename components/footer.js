@@ -242,31 +242,31 @@ footerTemplate.innerHTML = `
             <ul>
                 <h3 class="link-header">Links List</h3>
                 <li class="" id="link-text">
-                    <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Link # </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Link # </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Link # </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Link # </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Link # </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Link # </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Link # </a> 
                 </li>
     
             </ul>
@@ -276,31 +276,31 @@ footerTemplate.innerHTML = `
             <ul>
                 <h3 class="link-header">Links List</h3>
                 <li class="" id="link-text">
-                    <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Link # </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Link # </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Link # </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Link # </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Link # </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Link # </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Link # </a> 
                 </li>
     
             </ul>
@@ -310,31 +310,31 @@ footerTemplate.innerHTML = `
             <ul>
                 <h3 class="link-header">Links List</h3>
                 <li class="" id="link-text">
-                    <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Link # </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Link # </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Link # </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Link # </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Link # </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Link # </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Link # </a> 
                 </li>
     
             </ul>
@@ -344,31 +344,31 @@ footerTemplate.innerHTML = `
             <ul>
                 <h3 class="link-header">Links List</h3>
                 <li class="" id="link-text">
-                    <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Link # </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Link # </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Link # </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Link # </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Link # </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Link # </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Link # </a> 
                 </li>
     
             </ul>
@@ -378,31 +378,31 @@ footerTemplate.innerHTML = `
             <ul>
                 <h3 class="link-header">Links List</h3>
                 <li class="" id="link-text">
-                    <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Link # </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Link # </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Link # </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Link # </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Link # </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Link # </a> 
                 </li>
     
                 <li id="link-text">
-                    <a href="" class="link-page"> Link # </a><img src="./footer_elements/arrow-up-right-circle.svg" alt="->" id="link-icon">
+                    <a href="" class="link-page"> Link # </a> 
                 </li>
     
             </ul>
