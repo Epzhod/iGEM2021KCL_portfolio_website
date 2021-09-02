@@ -43,8 +43,7 @@ body {
   font-size: clamp(12px, 1.3vw, 20px);
   resize: none;
   background-color: var(--pear);
-  overflow-y: scroll;
-  
+  overflow: auto;
 }
 
 .optimizer__clickables {
