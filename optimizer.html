@@ -167,9 +167,13 @@
             var input = document.getElementById('txtInput').value;
             let dict_label = document.getElementById('codons').value;
 
+            document.getElementById("txtWarnings").style.display = 'flex';
+            document.getElementById("txtOutput").style.display = 'flex';
+
+
             if (input.length<1) {
-                document.getElementById("txtWarnings").innerHTML = 'No Input!';
-                document.getElementById("txtOutput").innerHTML = '';
+                document.getElementById("txtWarnings").style.display = 'none';
+                document.getElementById("txtOutput").style.display = 'none';
                 throw new Error('No Input!');
             }
 
@@ -182,7 +186,7 @@
                 var valid = KEYS.includes(codons[i]);
                 if (!valid) {
                     document.getElementById("txtWarnings").innerHTML = 'Invalid Value!';
-                    document.getElementById("txtOutput").innerHTML = '';
+                    document.getElementById("txtOutput").style.display = 'none';
                     throw new Error('Invalid Value!');
                 }
             };
@@ -211,6 +215,7 @@
             output = output.join("");
 
             if (input.endsWith('*')) {
+                document.getElementById("txtWarnings").style.display = 'none';
                 document.getElementById("txtOutput").innerHTML = output;
             }
             else {
