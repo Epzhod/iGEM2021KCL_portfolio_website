@@ -50,27 +50,31 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap:1vw;
-  padding-top: 1vw;
+  gap:1em;
+  padding-top: clamp(10px, 1.5vw, 20px);
 }
 
 .optimizer__choose-text {
   color: white;
-  font-size: 1.5vw;
   font-weight: 500;
+  font-size: clamp(12px, 1.5vw, 24px);
 }
 
 .optimizer__choose-table {
   background-color: var(--pear);
   color: black;
   font-weight: 600;
-  height: 3vw;
-  width: 14.5em;
-  font-size: 1.3vw;
+  height: 2.2em;
+  width: 15em;
+  font-size: clamp(12px, 1.4vw, 24px);
 }
 
+
 #Translate_Button {
-  height: 3vw;
-  width: 8em;
-  font-size: 1.3vw;
+  height: 2.2em;
+  width: 10em;
+  font-size: clamp(12px, 1.4vw, 24px);
+  font-weight: 600;
+  background-color: var(--seagreen);
+  color:white; 
 }

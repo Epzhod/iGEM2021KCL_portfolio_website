@@ -37,8 +37,9 @@
                   <option value="SAPIENS">      Homo sapines                </option>
                 </select>
 
-            <input id = 'Translate_Button' type="button" value="Translate" onclick="translator()">
+            <input id = 'Translate_Button' type="button" value="Optimize" onclick="translator()">
             </div>
+            <p type ="text" id = 'txtWarnings'></p>
             <p type="text" id= "txtOutput"></p>
 
         </form>
@@ -104,7 +105,6 @@
                                 "G" : "GGC"
             };
         
-            
         const MUSCULUS = { 
         
             "comment" : " Dictionary of the most used codon for each amino acid for Mus musculus using data from NCBI Taxonomy 26/08/2021",
@@ -168,7 +168,8 @@
             let dict_label = document.getElementById('codons').value;
 
             if (input.length<1) {
-                document.getElementById("txtOutput").innerHTML = 'No Input!';
+                document.getElementById("txtWarnings").innerHTML = 'No Input!';
+                document.getElementById("txtOutput").innerHTML = '';
                 throw new Error('No Input!');
             }
 
@@ -180,7 +181,8 @@
             // checks if protein input matches keys
                 var valid = KEYS.includes(codons[i]);
                 if (!valid) {
-                    document.getElementById("txtOutput").innerHTML = 'Invalid Value!';
+                    document.getElementById("txtWarnings").innerHTML = 'Invalid Value!';
+                    document.getElementById("txtOutput").innerHTML = '';
                     throw new Error('Invalid Value!');
                 }
             };
@@ -212,7 +214,8 @@
                 document.getElementById("txtOutput").innerHTML = output;
             }
             else {
-                document.getElementById("txtOutput").innerHTML = 'No stop codon! \n' + "<br>" + "<br>" + output;
+                document.getElementById("txtWarnings").innerHTML = 'No stop codon! \n';
+                document.getElementById("txtOutput").innerHTML = output;
             };
     };
 
