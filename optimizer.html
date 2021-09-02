@@ -17,29 +17,29 @@
 
     <div class="content">
 
+        <h1 class = 'optimizer__title'>Codon Optimizer</h1>
+
 
         <form>
 
-            <h2>Text Input</h2>
-            
-            <input type="textarea" id="txtInput">
-            
-            <label for="codons">Choose an organism:</label>
+            <h4 class = 'optimizer__prompt'>Insert sequence:</h4>
 
-                <select name="codons" id="codons">
-                  <option value="ECOLI">        Escherichia Coli            </option>
+            <textarea type="text" id="txtInput"></textarea>
+            
+
+            <div class="optimizer__clickables">
+            <label class = 'optimizer__choose-text' for="codons">Choose an organism:</label>
+
+                <select name="codons" id="codons" class = 'optimizer__choose-table'>
+                  <option value="ECOLI">        Escherichia coli            </option>
                   <option value="DROSOPHILA">   Drosophila melanogaster     </option>
                   <option value="MUSCULUS">     Mus musculus                </option>
                   <option value="SAPIENS">      Homo sapines                </option>
                 </select>
 
-
-
-
-
-            <input type="button" value="Translate" onclick="translator()">
+            <input id = 'Translate_Button' type="button" value="Translate" onclick="translator()">
+            </div>
             <p type="text" id= "txtOutput"></p>
-
 
         </form>
     
@@ -167,6 +167,10 @@
             var input = document.getElementById('txtInput').value;
             let dict_label = document.getElementById('codons').value;
 
+            if (input.length<1) {
+                document.getElementById("txtOutput").innerHTML = 'No Input!';
+                throw new Error('No Input!');
+            }
 
             input = input.toUpperCase();
             input = input.replace(/\s/g, '');

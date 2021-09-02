@@ -1,0 +1,77 @@
+@font-face {
+    font-family: Heebo;
+    src: url(./fonts/Heebo-VariableFont_wght.ttf);}
+
+:root {
+                --pear: #cde43a ;
+                --seagreen: #58bc82 ;
+                --prussian: #13293d;
+                --uranian: #c4e3fd;
+                --dodger: #4895ef;
+                --cobalt: #1446a0;
+  
+                font-family: Heebo;
+}
+
+
+body {
+  background-color: var(--cobalt)
+}
+
+
+.optimizer__title {
+  text-align: center;
+  color: white;
+  padding-bottom: 1vw;
+}
+
+.optimizer__prompt {
+  display: block;
+  margin: 1vw;
+  padding: 0;
+  color: white;
+  text-align: center;
+}
+
+#txtInput {
+  display: block;
+  width: 90vw;
+  height: 15em;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 1.5vw;
+  font-size: clamp(12px, 1.3vw, 20px);
+  resize: none;
+  background-color: var(--pear);
+  overflow-y: scroll;
+  
+}
+
+.optimizer__clickables {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:1vw;
+  padding-top: 1vw;
+}
+
+.optimizer__choose-text {
+  color: white;
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+
+.optimizer__choose-table {
+  background-color: var(--pear);
+  color: black;
+  font-weight: 600;
+  height: 3vw;
+  width: 14.5em;
+  font-size: 1.3vw;
+}
+
+#Translate_Button {
+  height: 3vw;
+  width: 8em;
+  font-size: 1.3vw;
+}
