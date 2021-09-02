@@ -39,10 +39,13 @@
 
             <input id = 'Translate_Button' type="button" value="Optimize" onclick="translator()">
             </div>
-            <p type ="text" id = 'txtWarnings'>Rando Text</p>
-            <p type="text" id= "txtOutput">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+        </br>
+        </br>
+            </form>
+        <p type ="text" id = 'txtWarnings'>Warning: <span style = 'color: green;'>None</span></p>
+        <p type="text" id= "txtOutput"></br></p>
 
-        </form>
+        </br>
     
     
     
@@ -172,8 +175,6 @@
 
 
             if (input.length<1) {
-                document.getElementById("txtWarnings").style.display = 'none';
-                document.getElementById("txtOutput").style.display = 'none';
                 throw new Error('No Input!');
             }
 
@@ -185,8 +186,7 @@
             // checks if protein input matches keys
                 var valid = KEYS.includes(codons[i]);
                 if (!valid) {
-                    document.getElementById("txtWarnings").innerHTML = 'Invalid Value!';
-                    document.getElementById("txtOutput").style.display = 'none';
+                    document.getElementById("txtWarnings").innerHTML = 'Warning: Invalid Value!';
                     throw new Error('Invalid Value!');
                 }
             };
@@ -215,11 +215,11 @@
             output = output.join("");
 
             if (input.endsWith('*')) {
-                document.getElementById("txtWarnings").style.display = 'none';
+                document.getElementById("txtWarnings").innerHTML = 'Warning: <span style = "color: green;">None</span>';
                 document.getElementById("txtOutput").innerHTML = output;
             }
             else {
-                document.getElementById("txtWarnings").innerHTML = 'No stop codon! \n';
+                document.getElementById("txtWarnings").innerHTML = 'Warning: No stop codon! \n';
                 document.getElementById("txtOutput").innerHTML = output;
             };
     };

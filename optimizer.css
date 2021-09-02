@@ -81,25 +81,27 @@ body {
 
 #txtOutput {
     display: block;
-    width: 90vw;
+    width: 88vw;
     height: 15em;
     background-color: var(--dodger);
     font-size: clamp(12px, 1.3vw, 20px);
     resize: none;
     overflow: auto;
-    margin: 0;
+    margin: auto;
+    padding: 1em;
+    overflow: auto;
+    overflow-wrap: break-word;
 }
 
 #txtWarnings {
     display: block;
-    margin: auto;
-    width: 90vw;
+    width: 88vw;
     height: 2em;
-    
-    margin-left: auto;
-    margin-right: auto;
-    
-    font-size: 1.5rem;
     background-color: var(--uranian);
-    margin: 0;
+    font-size: clamp(12px, 1.3vw, 20px);
+    resize: none;
+    overflow: auto;
+    margin: auto;
+    color: red;
+    padding: 1em;
 }
