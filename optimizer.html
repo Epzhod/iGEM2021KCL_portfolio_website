@@ -39,8 +39,8 @@
 
             <input id = 'Translate_Button' type="button" value="Optimize" onclick="translator()">
             </div>
-            <p type ="text" id = 'txtWarnings'></p>
-            <p type="text" id= "txtOutput"></p>
+            <p type ="text" id = 'txtWarnings'>Rando Text</p>
+            <p type="text" id= "txtOutput">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
 
         </form>
     
@@ -167,8 +167,8 @@
             var input = document.getElementById('txtInput').value;
             let dict_label = document.getElementById('codons').value;
 
-            document.getElementById("txtWarnings").style.display = 'flex';
-            document.getElementById("txtOutput").style.display = 'flex';
+            document.getElementById("txtWarnings").style.display = 'block';
+            document.getElementById("txtOutput").style.display = 'block';
 
 
             if (input.length<1) {
