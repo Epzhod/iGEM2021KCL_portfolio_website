@@ -34,7 +34,7 @@
                   <option value="ECOLI">        Escherichia coli            </option>
                   <option value="DROSOPHILA">   Drosophila melanogaster     </option>
                   <option value="MUSCULUS">     Mus musculus                </option>
-                  <option value="SAPIENS">      Homo sapines                </option>
+                  <option value="SAPIENS">      Homo sapiens                </option>
                 </select>
 
             <input id = 'Translate_Button' type="button" value="Optimize" onclick="translator()">
@@ -42,11 +42,36 @@
         </br>
         </br>
             </form>
-        <p type ="text" id = 'txtWarnings'>Warning: <span style = 'color: green;'>None</span></p>
+        
+        <h4 class = 'optimizer__prompt'>Optimized sequence:</h4>
+        <div class="optimizer-output__background">
+        </br>
+        <p type ="text" id = 'txtWarnings'><span style="color:orange">Input Protein Seqeuence</span></p>
         <p type="text" id= "txtOutput"></br></p>
-
+        </div>
+        </br>
         </br>
     
+        <div class="explanation__container">
+            <h2>Optimizer Information:</h2>
+
+            <h3>What is this?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam ad vitae consequatur harum esse. Cumque iste ex tenetur quas dolorem quam eum recusandae accusantium sit, fugiat, ducimus asperiores nesciunt magni.</p>
+
+        </br>
+            <h3>How to use it</h3>
+            <h4>Input</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore animi nostrum in consectetur delectus odit, repellendus quasi aliquam saepe facilis exercitationem molestiae iure, accusamus maiores illo consequatur, laboriosam veniam laudantium.</p>
+            <h4>Choose an organism</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque corrupti molestias quos. Odio eveniet similique veniam corrupti facere quisquam dolore labore fugiat dicta ullam a rerum soluta doloremque, perspiciatis distinctio.</p>
+            <h4>Optimizer</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, eligendi nemo maiores cumque aliquam quia accusamus molestias reprehenderit laudantium laboriosam itaque fugiat, mollitia possimus facilis iste iusto facere quisquam similique?</p>
+            
+        </br> 
+            <h3>Warnings</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum omnis provident deserunt, rerum laudantium esse beatae minima aliquid quos corrupti ipsam eaque nobis. Voluptatem voluptas, tempore qui quaerat tenetur natus?</p>
+
+        </div>
     
     
 
@@ -187,6 +212,7 @@
                 var valid = KEYS.includes(codons[i]);
                 if (!valid) {
                     document.getElementById("txtWarnings").innerHTML = 'Warning: Invalid Value!';
+                    document.getElementById("txtOutput").innerHTML = '';
                     throw new Error('Invalid Value!');
                 }
             };
@@ -215,7 +241,7 @@
             output = output.join("");
 
             if (input.endsWith('*')) {
-                document.getElementById("txtWarnings").innerHTML = 'Warning: <span style = "color: green;">None</span>';
+                document.getElementById("txtWarnings").style.display = 'none';
                 document.getElementById("txtOutput").innerHTML = output;
             }
             else {
