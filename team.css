@@ -146,8 +146,9 @@ display:flex;
 .portfolio-lightbox__content {
     width: clamp(200px, 80vw, 80%);
     height: clamp(100px, 40vw, 80%);
-    background: rgb(19,41,61);
-    background: linear-gradient(90deg, rgba(19,41,61,1) 59%, rgba(205,228,58,1) 100%);  
+    background-image: url(./team/popup_card_base.svg);
+    background-position: center;
+    background-size: cover;
     padding: 1vw;
     position: fixed;
     display: grid;
@@ -156,7 +157,7 @@ display:flex;
     justify-content: center;
     align-content: space-between;
     gap: 1vw;
-    border-radius: 40px;
+    border-radius: 5em;
     color: white;
 }
 
@@ -210,8 +211,8 @@ display:flex;
 
 .big {
     grid-area: 1/ 2/ span 1/ span 1;
-    margin-top: 3vw;
-    margin-right: 7vw;
+    margin-top: 2.8vw;
+    margin-right: 4vw;
     margin-left: 0px;
     width: 25vw;
     height: 33vw;
