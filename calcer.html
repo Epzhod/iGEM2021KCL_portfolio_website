@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Calcer</title>
+
+    </head>
+    <body>
+
+<div class="content">
+
+    <h1>Pvfp-5 to PCL binding amount calculator</h1>
+
+    <form>
+        <input id = "ScaffoldLength" type = 'textarea'>
+        <input id = "Calcer" type = 'button' value="Calculate" onclick="pCalcer()">
+    </form>
+
+    <p id = 'CalcerOutput'></p>
+
+
+
+<script>
+
+    class Scaffold {
+        constructor(inlen) {
+            this.INLEN = inlen
+    
+            // Error correction applied to this numbers is likely to lead to an overestimation of the actual surface area
+    
+            this.ENDS = 291 // the surface area of the vertical and horizontal 0.5mm slices at each end of the scaffold
+    
+            this.INNER = 216 // the surface area inside the channels per 1mm slice
+    
+            this.OUTER = 37 // the surface area on the outer surface per 1mm slice
+            
+            this.PLEN = 90.3/(10**7) // length of protein
+            
+            this.PWID = 47.6/(10**7) // width of protein
+            
+            this.PHIG = 33.7/(10**7) // hight of protein
+    
+            this.PRMW = 14008.9221 // molecular weight of protein (g/mol)
+    
+            this.AVGC = 6.02214076 * (10**23)  // avogadro constant
+    
+            //property values
+    
+            this.surface_area = this.Scalc()
+    
+            this.protein_units = this.Punit()
+    
+            this.protein_mole = this.Pmol()
+    
+            this.protein_gram = this.Pgram()
+    
+        }
+    
+        Scalc(){
+            // surface_area_channel = (scaffold_len-1)*(self.INNER + self.OUTER) + self.ENDS
+    
+            let surface_area = (this.INLEN-1)*(this.INNER + this.OUTER) + this.ENDS
+    
+            return(surface_area)
+        }
+    
+        Punit(){
+    
+            let protein_area = this.PLEN*this.PWID
+    
+            let protein_units = this.surface_area/protein_area
+    
+            return(protein_units)
+    
+        }
+    
+        Pmol(){
+    
+            return(this.protein_units / this.AVGC)
+    
+        }
+    
+        Pgram(){
+    
+            return(this.protein_mole * this.PRMW)
+    
+        }
+    }
+
+
+    function pCalcer() {
+        
+        let input_len = Number(document.getElementById('ScaffoldLength').value);
+
+        if ((input_len < 1)||(input_len % 1 != 0)){
+            throw new Error('Invalid Input')
+        }
+
+        let scaffold = new Scaffold(input_len);
+
+        const result = 'For a scaffold of length '+input_len+' milimeters, we would need '+(scaffold.protein_gram*(10**6)).toFixed(2)+' micrograms of Pvfp-5 for a single coating over a surface area of '+scaffold.surface_area+' milimeters squared.'
+
+        console.log(result)
+
+        document.getElementById('CalcerOutput').innerHTML = result;
+
+    }
+
+
+</script>
+
+</div>
+    </body>
+</html>
