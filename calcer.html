@@ -12,8 +12,8 @@
     <h1>Pvfp-5 to PCL binding amount calculator</h1>
 
     <form>
-        <h4>Input length of scaffold in mm:</h4>
-        <input id = "ScaffoldLength" type = 'textarea'>
+        <h4>Input length of scaffold in mm (whole number):</h4>
+        <input id = "ScaffoldLength" type = 'submit'>
         <input id = "Calcer" type = 'button' value="Calculate" onclick="pCalcer()">
     </form>
 
@@ -88,12 +88,6 @@
         }
     }
     
-    const wage = document.getElementById('ScaffoldLength');
-    wage.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter') {
-        validate(e);
-    }
-});
 
 
     function pCalcer() {
