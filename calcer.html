@@ -87,6 +87,13 @@
     
         }
     }
+    
+    const wage = document.getElementById('ScaffoldLength');
+    wage.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+        validate(e);
+    }
+});
 
 
     function pCalcer() {
