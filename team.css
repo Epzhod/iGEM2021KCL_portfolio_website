@@ -211,7 +211,7 @@ display:flex;
 
 .big {
     grid-area: 1/ 2/ span 1/ span 1;
-    margin-top: 3.5vw;
+    margin-top: 5vw;
     margin-right: 4vw;
     margin-left: 0px;
     width: 25vw;
