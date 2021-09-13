@@ -1,23 +1,4 @@
-@font-face {
-    font-family: Heebo;
-    src: url(./fonts/Heebo-VariableFont_wght.ttf);}
-
-:root {
-                --pear: #cde43a ;
-                --seagreen: #58bc82 ;
-                --prussian: #13293d;
-                --uranian: #c4e3fd;
-                --dodger: #4895ef;
-                --cobalt: #1446a0;
-
-                
-}
-
-
-body {
-  background-color: #13293d;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
 
 .optimizer__title {
   text-align: center;
@@ -28,6 +9,13 @@ body {
 .optimizer--content {
     --standard-width: 65vw;
     font-family: Heebo;
+    background-color: #13293d;                
+                --pear: #cde43a ;
+                --seagreen: #58bc82 ;
+                --prussian: #13293d;
+                --uranian: #c4e3fd;
+                --dodger: #4895ef;
+                --cobalt: #1446a0;
 }
 
 .optimizer__prompt {
