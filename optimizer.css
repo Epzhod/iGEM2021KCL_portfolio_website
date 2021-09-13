@@ -9,10 +9,8 @@
                 --uranian: #c4e3fd;
                 --dodger: #4895ef;
                 --cobalt: #1446a0;
-  
-                font-family: Heebo;
 
-                --standard-width: 65vw;
+                
 }
 
 
@@ -25,6 +23,11 @@ body {
   text-align: center;
   color: white;
   padding-bottom: 1vw;
+}
+
+.optimizer--content {
+    --standard-width: 65vw;
+    font-family: Heebo;
 }
 
 .optimizer__prompt {
