@@ -211,11 +211,11 @@ display:flex;
 
 .big {
     grid-area: 1/ 2/ span 1/ span 1;
-    margin-top: 2.8vw;
+    margin-top: 3.5vw;
     margin-right: 4vw;
     margin-left: 0px;
     width: 25vw;
-    height: 33vw;
+    height: 30vw;
 }
 
 .big-txt-wrap {
