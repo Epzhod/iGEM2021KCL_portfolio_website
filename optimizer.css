@@ -123,6 +123,14 @@
   padding-left: 2vw;
 }
 
+.explanation__container > h3 {
+  color: var(--uranian);
+}
+
+.explanation__container > h3 {
+  color: var(--cobalt);
+}
+
 .explanation__container > h4 {
   color: var(--pear);
 }
