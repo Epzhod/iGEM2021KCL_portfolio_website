@@ -7,13 +7,42 @@
 </head>
 <body>
 
+<div class="plots__container">
 
-    <img src = './plots/logplot.png' />
-    <img src = './plots/backbone_by_RMSD.png' />
-    <img src = './plots/sidechain_by_RMSD.png' />
-    <img src = './plots/total_by_RMSD.png' />
-    <img src = './plots/total_by_gyration.png' />
-    <img src = './plots/residues_by_RMSF.png' />
+
+    
+    <div class="plots-plot__container">
+        <img class = "plots-plot__image" src = './plots/logplot.png' />
+        <i class = "plots-plot__description"> A plot of the RMSD values over time (measured in frames) of </i>
+    </div>
+
+    <div class="plots-plot__container">
+        <img class = "plots-plot__image" src = './plots/backbone_by_RMSD.png' />
+        <i class = "plots-plot__description"></i>
+    </div>
+
+    <div class="plots-plot__container">
+        <img class = "plots-plot__image" src = './plots/sidechain_by_RMSD.png' />
+        <i class = "plots-plot__description"></i>
+    </div>
+
+    <div class="plots-plot__container">
+        <img class = "plots-plot__image" src = './plots/total_by_RMSD.png' />
+        <i class = "plots-plot__description"></i>
+    </div>
+
+    <div class="plots-plot__container">
+        <img class = "plots-plot__image" src = './plots/total_by_gyration.png' />
+        <i class = "plots-plot__description"></i>
+    </div>
+
+    <div class="plots-plot__container">
+        <img class = "plots-plot__image" src = './plots/residues_by_RMSF.png' />
+        <i class = "plots-plot__description"></i>
+    </div>
+
+
+    <div class="plots-mutations__table">
     <img src = './plots/mut_plots/LYS194GLU.png' />
     <img src = './plots/mut_plots/ALA228LYS.png' />
     <img src = './plots/mut_plots/SER274PRO.png' />
@@ -22,6 +51,10 @@
     <img src = './plots/mut_plots/LYS654ASP.png' />
     <img src = './plots/mut_plots/ARG670THR.png' />
     <img src = './plots/mut_plots/GLN781GLU.png' />
-    
+    </div>
+
+
+
+</div>    
 </body>
 </html>
