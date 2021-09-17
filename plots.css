@@ -1,3 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
 .plots__container {
-    background-color: yellow;
+    font-family: Heebo;
+    background-color:#b0b8e7;                
+                --pear: #cde43a ;
+                --seagreen: #58bc82 ;
+                --prussian: #13293d;
+                --uranian: #c4e3fd;
+                --dodger: #4895ef;
+                --cobalt: #1446a0;
+    padding: 0px;
+    margin: 0px;
+}
+
+.plots-plot__container {
+    display: flex;
+    flex-direction: column;
+    width: clamp(120px, 30vw, 40vw);
+    font-size: clamp(9px, 1vw, 2vw);
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.plots-plot__image {
+    width: clamp(120px, 30vw, 40vw);
+    background-color: white;
+}
+
+.plots-plot__description {
+    font-size: clamp(9px, 1vw, 2vw);
+    width: clamp(120px, 27vw, 40vw);
+    text-align: justify;
+    margin:0.5em;
+}
+
+.plots-mutations__container {
+    background-color: #cde43a;
+}
+
+.plots-mutations__table {
+    background-color: #cde43a;
+}
+
+.plots-mutations__plot {
+    background-color: #cde43a;
+}
+
+.plots-mutations__description {
+    background-color: #cde43a;
 }

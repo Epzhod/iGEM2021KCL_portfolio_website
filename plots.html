@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phystech Data Plots</title>
+
+    <link rel = "stylesheet" href = "./plots.css" />
+
+
 </head>
 <body>
 
@@ -13,51 +17,54 @@
     
     <div class="plots-plot__container">
         <img class = "plots-plot__image" src = './plots/WT_logplot.png' />
-        <i class = "plots-plot__description"> A plot of the RMSD values over time (measured in frames) of </i>
+        <i class = "plots-plot__description"> A plot of the RMSD values of the wild-type ChABC measured over a hundered 1 second frames. The values are separated based on whether the values were gathered from the sidechains or the backbone of the protein model.</i>
     </div>
     
      <div class="plots-plot__container">
         <img class = "plots-plot__image" src = './plots/MUT_logplot.png' />
-        <i class = "plots-plot__description"> A plot of the RMSD values over time (measured in frames) of </i>
+        <i class = "plots-plot__description"> A plot of the RMSD values of the mutated ChABC measured over a hundered 1 second frames. The values are separated based on whether the values were gathered from the sidechains or the backbone of the protein model.</i>
     </div>
 
     <div class="plots-plot__container">
         <img class = "plots-plot__image" src = './plots/backbone_by_RMSD.png' />
-        <i class = "plots-plot__description"></i>
+        <i class = "plots-plot__description"> A comparison between the distributions for the frames of the backbone RMSD values of the wild-type and mutated ChABC protein models. The difference was statistically significant (p = 2.6e-9)</i>
     </div>
 
     <div class="plots-plot__container">
         <img class = "plots-plot__image" src = './plots/sidechain_by_RMSD.png' />
-        <i class = "plots-plot__description"></i>
+        <i class = "plots-plot__description"> A comparison between the distributions for the frames of the sidechain RMSD values of the wild-type and mutated ChABC protein models. The difference was not statistically significant (p = 0.6)</i>
     </div>
 
     <div class="plots-plot__container">
         <img class = "plots-plot__image" src = './plots/total_by_RMSD.png' />
-        <i class = "plots-plot__description"></i>
+        <i class = "plots-plot__description"> A comparison between the distributions for the frames of the total RMSD values of the wild-type and mutated ChABC protein models. The difference was statistically significant (p = 2.6e-9)</i>
     </div>
 
     <div class="plots-plot__container">
         <img class = "plots-plot__image" src = './plots/total_by_gyration.png' />
-        <i class = "plots-plot__description"></i>
+        <i class = "plots-plot__description"> A comparison between the distributions for the frames of the total radius of gyration values of the wild-type and mutated ChABC protein models. The difference was statistically significant (p = 3.5e-9)</i>
     </div>
 
     <div class="plots-plot__container">
         <img class = "plots-plot__image" src = './plots/residues_by_RMSF.png' />
-        <i class = "plots-plot__description"></i>
+        <i class = "plots-plot__description">A comparison between the distributions of all the protein residues based on RMSF between the wild-type and mutated ChABC protein models. The difference was statistically significant (p = 1.1e-10) </i>
     </div>
 
-
+    <div class="plots-mutations__container">
     <div class="plots-mutations__table">
-    <img src = './plots/mut_plots/LYS194GLU.png' />
-    <img src = './plots/mut_plots/ALA228LYS.png' />
-    <img src = './plots/mut_plots/SER274PRO.png' />
-    <img src = './plots/mut_plots/ASN288ASP.png' />
-    <img src = './plots/mut_plots/SER343ASN.png' />
-    <img src = './plots/mut_plots/LYS654ASP.png' />
-    <img src = './plots/mut_plots/ARG670THR.png' />
-    <img src = './plots/mut_plots/GLN781GLU.png' />
+    <img class = "plots-mutations_plot" src = './plots/mut_plots/LYS194GLU.png' />
+    <img class = "plots-mutations_plot" src = './plots/mut_plots/ALA228LYS.png' />
+    <img class = "plots-mutations_plot" src = './plots/mut_plots/SER274PRO.png' />
+    <img class = "plots-mutations_plot" src = './plots/mut_plots/ASN288ASP.png' />
+    <img class = "plots-mutations_plot" src = './plots/mut_plots/SER343ASN.png' />
+    <img class = "plots-mutations_plot" src = './plots/mut_plots/LYS654ASP.png' />
+    <img class = "plots-mutations_plot" src = './plots/mut_plots/ARG670THR.png' />
+    <img class = "plots-mutations_plot" src = './plots/mut_plots/GLN781GLU.png' />
     </div>
 
+    <i class = "plots-mutations__description"> A comparison of the RMSF values before and after mutation. </i>
+    
+    </div>
 
 
 </div>    
