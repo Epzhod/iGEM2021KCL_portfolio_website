@@ -16,7 +16,21 @@
 </br>
 
 <h2 class="plots-explanation__title">Explaining the mutations</h2>
-<p class="plots-explanation__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque officia labore distinctio, exercitationem voluptates commodi facilis? Quae corrupti consequatur a libero? Animi itaque pariatur illo facilis iure, odio ullam cum.</p>
+<p class="plots-explanation__text">
+    <h3> Introduction </h3>
+    </br>
+    This year our team decided to look at Chondroitinase ABC (ChABC) as a potential therapeutic agent in SCI. The main use case we are considering is injections along the spinal cord, which have the potential to stimulate neurite regrowth. The main issue with applying ChABC endogenously is that it becomes unstable at normal human physiological temperatures, 37 *C. In order to solve this problem our team collaborated with the Phystech Moscow 2021 iGEM team to computationally model eight mutations on the 1HN0 ChABC structure.
+    </br>
+    <h3>Computational Mutation</h3>
+    </br>
+    A paper published by Dr. Marian Hettiaratchi in August of 2020 analysed the impact of directed mutagenesis at certain residue positions of ChABC. We were lucky enough to be provided by Dr. Hettiaratchi with a list of eight positions that were suspected to have a significant impact on the stability of ChABC. We were also given the mutations that might have the best impact at those positions.
+In order to simulate those mutations in silico we compared the canonical 1HN0 structure (WT) with a homology model of the sequence with the mutated residues (MUT). The homology model was created using MODELLER 10.1. The two structures' sequences and overall structures were positionally identical, with the exception of the eight mutations.
+    </br>
+    <h3> Parameters of molecular dynamics simulation </h3>
+    </br>
+    The two structures WT and MUT were sent over to the Phystech Moscow team, who modelled and compared their thermostability in silico for 100 frames at 310.15°K (37°C). The simulation was performed in an explicit solvent that had been equilibrated for charge, pressure and temperature using the “c36m” forcefield and supporting ensembles.
+    </br>
+</p>
 
 
 <div class="plots-logplots__container">
