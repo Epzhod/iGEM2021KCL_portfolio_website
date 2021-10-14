@@ -81,6 +81,7 @@
 
 .team-member__big-picture{
     width: 30vw;
+    max-height: 40vw;
     border-radius: 20px;
 }
 .team-member__textarea {
