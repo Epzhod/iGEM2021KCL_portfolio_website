@@ -1,929 +1,617 @@
 <!DOCTYPE html>
-
 <html>
     <head>
-        <meta charset="utf-8">
-        <title> Team </title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="team.css">
+        <title>Team Page</title>
     </head>
     <body>
 
-<div class="portfolio__container">
+<!-- TEAM CODE BEGINS -->
 
-        <div class="team-leaders">
-        <h2>Team Leaders</h2>
+<style>
+    /* Fonts added Heebo- variable; */
+@font-face {
+    font-family: Heebo;
+    src: url(./fonts/Heebo-VariableFont_wght.ttf);}
+
+.team-page__wrapper {
+    font-family: Heebo;
+    --pear: #cde43a ;
+    --seagreen: #58bc82 ;
+    --prussian: #13293d;
+    --uranian: #c4e3fd;
+    --dodger: #4895ef;
+    --cobalt: #1446a0;
+    
+    display: flex;
+    gap: 2vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 60vw;
+    width: 70vw;
+    justify-content: center;
+    margin: auto;
+    border: solid 0.1rem black;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+
+.team-member__small {
+   border:dashed 0.08em blue; 
+   width: 20vw;
+   display: grid;
+   justify-content: space-around;
+}
+
+.team-member__card {
+    text-align: center;
+    text-decoration: none;
+}
+
+.team-member__small-picture {
+    width:15vw;
+}
+
+.team-member__small-desc {
+    color: black;
+    font-size: 2.5vw;
+}
+
+.team-member__lightbox{
+    display: none;
+}
+
+.team-member__lightbox:target{
+    background-color: #00000060;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    min-height: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.team-member__big{
+    position: fixed;
+    background: var(--uranian);
+    height: 40vw;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 15fr 5fr;
+    gap: 2vw;
+    padding-left: 2vw;
+    /*padding-right: 0.5vw;*/
+    border-radius: 20px;
+}
+
+.team-member__big-picture{
+    width: 30vw;
+    max-height: 40vw;
+    border-radius: 20px;
+}
+.team-member__textarea {
+    font-size: 1.5vw;
+    text-align: justify;
+}
+
+.team-big__button{
+    width: 2vw;
+    font-size: 3vw;
+    position: relative;
+    color: var(--cobalt);
+    z-index: 10;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.team-big__button-last{
+    left: -44vw;
+    font-size: 6vw;
+}
+
+.team-big__button-next{
+    right: -43vw;
+    font-size: 6vw;
+}
+
+.team-big__button-close{
+    right: -38vw;
+    position: relative;
+    top: -18vw;
+    font-size: 4vw;
+    font-weight: 300;
+}
+
+</style>
+
+
+
+<div class="team-page__wrapper">
+
 
 
 <!-- Alya -->
 
-            <div class="member leader Alya">
-                
-<!-- Card -->
-
-<div class="portfolio__item">
-    <a href="#Alya" class="button">
-        <img src="./team/Alya-small.png" alt="Alya" class="small">
-        <div class="portfolio__desc">
-            <h3 class="portfolio__title">Alya</h3>
-            <h4 class="portfolio__subtitle">Team Co-Leader</h4>
-        </div>
+<div class="team-member__small">
+    <a class="team-member__card" href="#Alya">
+        <img class = "team-member__small-picture" src = "https://picsum.photos/400/400" />
+        <p class = "team-member__small-desc">Alya</p>
     </a>
 </div>
 
-
-<!-- Lightbox -->
-
-<div class="portfolio-lightbox" id = 'Alya'>
-        <div class="portfolio-lightbox__nav">
-
-        <a href="#Thurga" class="last">  &lt;    </a>
-        <a href="#" class="close"> &#10006; </a>
-        <a href="#Luke" class="next">  &gt;    </a>
-
+<div class="team-member__lightbox" id="Alya">
+    <a href = "#Thurga" class = "team-big__button team-big__button-last"> < </a>
+   <div class = "team-member__big">
+        <div class = "team-member__textarea">
+            <h2 class = "team-member__title">Alya Masoud Abdelhafid </h2>
+            <h4 class = "team-member__course">Team Leader</h4>
+            <p>Alya, one of the team leaders, is entering her final year of Nutrition BSc at King’s College London. After participating in iGEM 2020, she was inspired by iGEMs’ ability to empower young scientists and encourage participants to develop innovative solutions. This year she was motivated to work alongside her team to further develop last year’s work and lead her team into the final stages of their project design. After completing extensive research into spinal cord injuries during the iGEM season, Alya has been inspired to pursue a Masters in Neuroscience. She hopes to combine her knowledge in clinical nutrition to elucidate potential therapeutic applications in neurodegenerative diseases. When she isn’t working on iGEM or her degree, Alya loves creative writing, binge-reading and working alongside the King’s Biotechnology and Synthetic Biology Society of which she is President.</p>
         </div>
-        <div class="portfolio-lightbox__content">
-        <img src="./team/Alya-big.jpeg" alt="Alya" class="big">
-        <div class='big-txt-wrap'>
-        <h3 class="portfolio-lightbox__title">Alya Masoud</h3> 
-        <h4 class = 'portfolio-lightbox__role'>ROLE</h4>
-        <p class='portfolio-lightbox__body'>
-                
-            Hello everyone! My name is Alya, this year’s Co-Team Lead alongside Luke and I’m going into the last year of my BSc Nutrition degree. This is my second year participating in iGEM and I am so excited to be part of this incredible community once again! In my free time, I like to binge read books…So much so that one of my fun facts is that I've read three books in one day! I can speak three languages and in the future look forward to pursuing research in both applied nutrition and regenerative medicine! I look forward to collaborating with more iGEM teams this year and can’t wait to share our project with you all soon! 
-
-  </p></div>
+        <img class = "team-member__big-picture" src = "https://picsum.photos/300/500" />
+        
     </div>
-    </div>
+    <a href = "#" class = "team-big__button team-big__button-close">  ✖ </a>
+    <a href = "#Luke" class = "team-big__button team-big__button-next"> > </a>
+</div>
 
-            </div>
-            
+<!-- Leader Placeholder -->
+
+<div class="team-member__small">
+    <!-- Nothing to see here -->
+</div>
+
 <!-- Luke -->
 
-            <div class="member leader Luke">
-
-<!-- Card -->
-
-<div class="portfolio__item">
-    <a href="#Luke" class="button">
-        <img src="./team/Luke-small.png" alt="Luke" class="small">
-        <div class="portfolio__desc">
-            <h3 class="portfolio__title">Luke</h3>
-            <h4 class="portfolio__subtitle">Team Co-Leader</h4>
-        </div>
+<div class="team-member__small">
+    <a class="team-member__card" href="#Luke">
+        <img class = "team-member__small-picture" src = "https://picsum.photos/400/400" />
+        <p class = "team-member__small-desc">Luke</p>
     </a>
 </div>
 
 
-<!-- Lightbox -->
-
-<div class="portfolio-lightbox" id = 'Luke'>
-        <div class="portfolio-lightbox__nav">
-
-        <a href="#Alya" class="last">  &lt;    </a>
-        <a href="#" class="close"> &#10006; </a>
-        <a href="#Adi" class="next">  &gt;    </a>
-
+<div class="team-member__lightbox" id="Luke">
+    <a href = "#Alya" class = "team-big__button team-big__button-last"> < </a>
+   <div class = "team-member__big">
+        <div class = "team-member__textarea">
+            <h2 class = "team-member__title">Luke Bateman</h2>
+            <h4 class = "team-member__course">Team Leader</h4>
+            <p>Luke, one of the team leaders, is entering his final year of Biochemistry BSc at King’s College London. Having loved his experience participating in iGEM 2020, he decided to take on the role of co-team leader this year. In his spare time, Luke does a lot of exercise, such as training in both Judo and Brazilian Jiu Jitsu. He also spends a lot of time reading, both fiction and non-fiction, as it helps to keep his mind occupied outside of university. He has invested a lot of time in learning to speak Japanese, as he plans to travel there, to work in scientific research and design upon finishing his degree. He has a keen interest in immunology and the applications of genetic engineering tools including CRISPR-Cas9, and loves to dive into the mechanisms of cellular processes and the interactions that guide them. </p>
         </div>
-        <div class="portfolio-lightbox__content">
-        <img src="./team/Luke-big.JPG" alt="Luke" class="big">
-        <div class='big-txt-wrap'>
-        <h3 class="portfolio-lightbox__title">Luke Bateman</h3> 
-        <h4 class = 'portfolio-lightbox__role'>ROLE</h4>
-        <p class='portfolio-lightbox__body'>
-                
-            Hello, I’m Luke, a second year Biochemistry student and one of this year's Co-Team leads. Last year, iGEM was such a fantastic experience where I got the opportunity to meet so many new people, so much so that I decided to do it again! In my free time I like to train in BrazilianJiu Jitsu and Judo, as well as play Super Smash Brothers with my friends. I also find a lot of fun in learning Japanese, which I’ve been learning for just over a year. In the future I would love to research in Japan, hopefully doing something involving genetic engineering!
-  </p></div>
+        <img class = "team-member__big-picture" src = "https://picsum.photos/300/500" />
+        
     </div>
-    </div>
-
-    </div>
+    <a href = "#" class = "team-big__button team-big__button-close">  ✖ </a>
+    <a href = "#Adi" class = "team-big__button team-big__button-next"> > </a>
 </div>
 
-
-<!-- Begin Groups -->
-        <div class="team-groups">
-        
 <!-- Adi -->
 
-            <div class="member">
-
-<!-- Card -->
-
-<div class="portfolio__item">
-    <a href="#Adi" class="button">
-        <img src="./team/Adi-small.png" alt="Adi" class="small">
-        <div class="portfolio__desc">
-            <h3 class="portfolio__title">Adi</h3>
-            <h4 class="portfolio__subtitle">Team Member</h4>
-        </div>
+<div class="team-member__small">
+    <a class="team-member__card" href="#Adi">
+        <img class = "team-member__small-picture" src = "https://picsum.photos/400/400" />
+        <p class = "team-member__small-desc">Adi</p>
     </a>
 </div>
 
-
-<!-- Lightbox -->
-
-<div class="portfolio-lightbox" id = 'Adi'>
-        <div class="portfolio-lightbox__nav">
-
-        <a href="#Luke" class="last">  &lt;    </a>
-        <a href="#" class="close"> &#10006; </a>
-        <a href="#Aini" class="next">  &gt;    </a>
-
+<div class="team-member__lightbox" id="Adi">
+    <a href = "#Luke" class = "team-big__button team-big__button-last"> < </a>
+   <div class = "team-member__big">
+        <div class = "team-member__textarea">
+            <h2 class = "team-member__title">Aditya Shirode</h2>
+            <h4 class = "team-member__course">Bioprinting Team Member</h4>
+            <p>Aditya is currently in the third year of his Biochemistry BSc at King’s College London. He is fascinated by the multifaceted process of scientific research being translated into novel therapies or diagnostics produced by start-ups, with a particular interest in immunology. This component of the project spearheaded him to take part in iGEM, which fostered his entrepreneurial interests, but also led him to develop his competency in educational outreach and independent research in the field of synthetic biology. When he is not babbling about financial projections, he has a profound passion in sports such as Futsal, in which he co-founded a society at King’s, and Muay Thai. In the future, he would like to pursue a career in venture capital, and attributes this path to his experience at iGEM.</p>
         </div>
-        <div class="portfolio-lightbox__content">
-        <img src="./team/Adi-big.jpeg" alt="Adi" class="big">
-        <div class='big-txt-wrap'>
-        <h3 class="portfolio-lightbox__title">Aditiya FILLNAME</h3> 
-        <h4 class = 'portfolio-lightbox__role'>ROLE</h4>
-        <p class='portfolio-lightbox__body'>
-                
-           Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sed laborum facere dolorum doloremque, iusto impedit adipisci! Dicta voluptate similique odit corrupti eaque voluptates atque officia itaque. Libero, officia incidunt?
-  </p></div>
+        <img class = "team-member__big-picture" src = "https://picsum.photos/300/500" />
+        
     </div>
-    </div>
-
-            </div>
-
+    <a href = "#" class = "team-big__button team-big__button-close">  ✖ </a>
+    <a href = "#Aini" class = "team-big__button team-big__button-next"> > </a>
+</div>
 
 <!-- Aini -->
 
-            <div class="member">
-
-<!-- Card -->
-
-<div class="portfolio__item">
-    <a href="#Aini" class="button">
-        <img src="./team/Aini-small.png" alt="Aini" class="small">
-        <div class="portfolio__desc">
-            <h3 class="portfolio__title">Aini</h3>
-            <h4 class="portfolio__subtitle">Team Member</h4>
-        </div>
+<div class="team-member__small">
+    <a class="team-member__card" href="#Aini">
+        <img class = "team-member__small-picture" src = "https://picsum.photos/400/400" />
+        <p class = "team-member__small-desc">Aini</p>
     </a>
 </div>
 
-
-<!-- Lightbox -->
-
-<div class="portfolio-lightbox" id = 'Aini'>
-        <div class="portfolio-lightbox__nav">
-
-        <a href="#Adi" class="last">  &lt;    </a>
-        <a href="#" class="close"> &#10006; </a>
-        <a href="#Akashdeep" class="next">  &gt;    </a>
-
+<div class="team-member__lightbox" id="Aini">
+    <a href = "#Adi" class = "team-big__button team-big__button-last"> < </a>
+   <div class = "team-member__big">
+        <div class = "team-member__textarea">
+            <h2 class = "team-member__title">Qurratu Aini Binti Hashim</h2>
+            <h4 class = "team-member__course">SCI Team Member</h4>
+            <p>Aini is currently in her third year of MBBS Medicine at King’s College London, which she balances alongside numerous event-planning roles in societies related to entrepreneurship , engineering and international relations. She is interested in exploring the ways in which these fields can interact - both directly and indirectly - with the healthcare landscape as a means of improving delivery of care beyond the patient bedside. This constitutes the main driver behind why she joined the KCL iGEM 2021 teams’ therapeutics-focused Phase II project, besides also wanting to build a strong foundation of research and general technical skills (e.g. animation on OpenToonz!). For sporting fixtures, Aini enjoys karate and badminton but would like to explore other martial arts and is an avid learner of modern foreign languages including French and Mandarin. In terms of clinical medicine, Aini’s current specialties of interest after completing the academic foundation year programme include obstetrics and gynaecology, paediatrics and anaesthesiology.</p>
         </div>
-        <div class="portfolio-lightbox__content">
-        <img src="./team/Aini-big.jpg" alt="Aini" class="big">
-        <div class='big-txt-wrap'>
-        <h3 class="portfolio-lightbox__title">Aini Hashim</h3> 
-        <h4 class = 'portfolio-lightbox__role'>ROLE</h4>
-        <p class='portfolio-lightbox__body'>
-                
-           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam aliquam ab eos nihil ipsam distinctio nulla non fugit, quasi perferendis a esse aspernatur ratione, quisquam eum nam minima est recusandae.
-  </p></div>
+        <img class = "team-member__big-picture" src = "https://picsum.photos/300/500" />
+        
     </div>
-    </div>
-
-            </div>
-
+    <a href = "#" class = "team-big__button team-big__button-close">  ✖ </a>
+    <a href = "#Akashdeep" class = "team-big__button team-big__button-next"> > </a>
+</div>
 
 <!-- Akashdeep -->
 
-            <div class="member">
-
-<!-- Card -->
-
-<div class="portfolio__item">
-    <a href="#Akashdeep" class="button">
-        <img src="./team/Akashdeep-small.png" alt="Sally" class="small">
-        <div class="portfolio__desc">
-            <h3 class="portfolio__title">Akashdeep</h3>
-            <h4 class="portfolio__subtitle">Team Member</h4>
-        </div>
+<div class="team-member__small">
+    <a class="team-member__card" href="#Akashdeep">
+        <img class = "team-member__small-picture" src = "https://picsum.photos/400/400" />
+        <p class = "team-member__small-desc">Akashdeep</p>
     </a>
 </div>
 
 
-<!-- Lightbox -->
-
-<div class="portfolio-lightbox" id = 'Akashdeep'>
-        <div class="portfolio-lightbox__nav">
-
-        <a href="#Aini" class="last">  &lt;    </a>
-        <a href="#" class="close"> &#10006; </a>
-        <a href="#Alia" class="next">  &gt;    </a>
-
+<div class="team-member__lightbox" id="Akashdeep">
+    <a href = "#Aini" class = "team-big__button team-big__button-last"> < </a>
+   <div class = "team-member__big">
+        <div class = "team-member__textarea">
+            <h2 class = "team-member__title">Akashdeep Kundal</h2>
+            <h4 class = "team-member__course">SCI Team Member</h4>
+            <p>kashdeep is currently in her final year of her Biomedical Science BSc at King’s College London, specialising in genetics and molecular biology. Her interest in regenerative medicine led her to join the iGEM team and she has been able to explore the real-world applications of regenerative medicine and synthetic biology for the development of therapeutic devices. She has also gained an insight into the various fields of biology such as science communication, education and entrepreneurship. In the future, she hopes to pursue a Masters degree related to stem cells and regenerative medicine. In her free time, she enjoys travelling, writing and watching Formula 1.</p>
         </div>
-        <div class="portfolio-lightbox__content">
-        <img src="./team/Akasdeep-big.JPG" alt="Akashdeep" class="big">
-        <div class='big-txt-wrap'>
-        <h3 class="portfolio-lightbox__title">Akashdeep FILLNAME</h3> 
-        <h4 class = 'portfolio-lightbox__role'>ROLE</h4>
-        <p class='portfolio-lightbox__body'>
-                
-            Lipsum Lorem ipsum dolor sit amet consectetur adipisicing elit;    
-            Neque debitis in consectetur quo nostrum voluptate corporis de altes.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates libero maiores tempora quam quos
-            impedit quisquam ratione enim, dolores commodi saepe consequatur explicabo nam accusantium deserunt.
-            Accusantium sit nobis dolor.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quisquam dolorum temporibus quaerat
-            facere est sed magni tempora, eligendi adipisci voluptatibus molestias sequi a aspernatur et alias
-            iste ut blanditiis.
-  </p></div>
+        <img class = "team-member__big-picture" src = "https://picsum.photos/300/500" />
+        
     </div>
-    </div>
-
-            </div>
+    <a href = "#" class = "team-big__button team-big__button-close">  ✖ </a>
+    <a href = "#Alia" class = "team-big__button team-big__button-next"> > </a>
+</div>
 
 
 <!-- Alia -->
 
-            <div class="member">
-
-<!-- Card -->
-
-<div class="portfolio__item">
-    <a href="#Alia" class="button">
-        <img src="./team/Alia-small.png" alt="Alia" class="small">
-        <div class="portfolio__desc">
-            <h3 class="portfolio__title">Alia</h3>
-            <h4 class="portfolio__subtitle">Position</h4>
-        </div>
+<div class="team-member__small">
+    <a class="team-member__card" href="#Alia">
+        <img class = "team-member__small-picture" src = "https://picsum.photos/400/400" />
+        <p class = "team-member__small-desc">Alia</p>
     </a>
 </div>
 
-
-<!-- Lightbox -->
-
-<div class="portfolio-lightbox" id = 'Alia'>
-        <div class="portfolio-lightbox__nav">
-
-        <a href="#Akashdeep" class="last">  &lt;    </a>
-        <a href="#" class="close"> &#10006; </a>
-        <a href="#Angela" class="next">  &gt;    </a>
-
+<div class="team-member__lightbox" id="Alia">
+    <a href = "#Akashdeep" class = "team-big__button team-big__button-last"> < </a>
+   <div class = "team-member__big">
+        <div class = "team-member__textarea">
+            <h2 class = "team-member__title">Alia Nathoo</h2>
+            <h4 class = "team-member__course">MFP Team Member</h4>
+            <p>Alia is currently in the third year of her Chemistry with Biomedicine BSc at King’s College London. Her research interests lie in the medicinal applications of chemistry, particularly in radiopharmaceuticals. ​​After reading about the KCL iGEM 2020 project, Alia decided to join this year’s team in order to explore more unfamiliar aspects of biology such as biotechnology and genetic engineering, as well as develop new skills including design and coding. Participating in iGEM this year has allowed Alia to gain a greater understanding of independent research practices, as well as providing a great opportunity to work in a multi-disciplinary team. Outside of academia, Alia enjoys playing the piano, travelling and reading.</p>
         </div>
-        <div class="portfolio-lightbox__content">
-        <img src="./team/Alia-big.jpg" alt="Alia" class="big">
-        <div class='big-txt-wrap'>
-        <h3 class="portfolio-lightbox__title">Alia Nathoo</h3> 
-        <h4 class = 'portfolio-lightbox__role'>ROLE</h4>
-        <p class='portfolio-lightbox__body'>
-                
-            Lipsum Lorem ipsum dolor sit amet consectetur adipisicing elit;    
-            Neque debitis in consectetur quo nostrum voluptate corporis de altes.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates libero maiores tempora quam quos
-            impedit quisquam ratione enim, dolores commodi saepe consequatur explicabo nam accusantium deserunt.
-            Accusantium sit nobis dolor.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quisquam dolorum temporibus quaerat
-            facere est sed magni tempora, eligendi adipisci voluptatibus molestias sequi a aspernatur et alias
-            iste ut blanditiis.
-  </p></div>
+        <img class = "team-member__big-picture" src = "https://picsum.photos/300/500" />
+        
     </div>
-    </div>
-
-            </div>
-
+    <a href = "#" class = "team-big__button team-big__button-close">  ✖ </a>
+    <a href = "#Angela" class = "team-big__button team-big__button-next"> > </a>
+</div>
 
 <!-- Angela -->
 
-            <div class="member">
-
-<!-- Card -->
-
-<div class="portfolio__item">
-    <a href="#Angela" class="button">
-        <img src="./team/Angela-small.png" alt="Angela" class="small">
-        <div class="portfolio__desc">
-            <h3 class="portfolio__title">Angela</h3>
-            <h4 class="portfolio__subtitle">Team Member</h4>
-        </div>
+<div class="team-member__small">
+    <a class="team-member__card" href="#Angela">
+        <img class = "team-member__small-picture" src = "https://picsum.photos/400/400" />
+        <p class = "team-member__small-desc">Angela</p>
     </a>
 </div>
 
-
-<!-- Lightbox -->
-
-<div class="portfolio-lightbox" id = 'Angela'>
-        <div class="portfolio-lightbox__nav">
-
-        <a href="#Alia" class="last">  &lt;    </a>
-        <a href="#" class="close"> &#10006; </a>
-        <a href="#Beatriz" class="next">  &gt;    </a>
-
+<div class="team-member__lightbox" id="Angela">
+    <a href = "#Alia" class = "team-big__button team-big__button-last"> < </a>
+   <div class = "team-member__big">
+        <div class = "team-member__textarea">
+            <h2 class = "team-member__title">Angela (Sichun) Yao</h2>
+            <h4 class = "team-member__course">SCI Team Member</h4>
+            <p>Angela is in her second year of her Neuroscience BSc at King’s College London. She decided to join this year’s iGEM team as she was keen to explore the applications of synthetic biology in neuroscience and regenerative medicine. She is motivated to come up with ethical and responsible solutions to modern problems using Synthetic Biology, alongside her team members. During this iGEM season, she discovered her passion in science communication, with a focus on bridging the gap between researchers and the general public, using different engagement strategies. This summer she discovered her passions in design, coding, biobusiness, and particularly enjoyed having picnics with her iGEM family in the wild! In her non-iGEM (spare) time, she enjoys travelling, sports and music.</p>
         </div>
-        <div class="portfolio-lightbox__content">
-        <img src="./team/Angela-big.jpg" alt="Angela" class="big">
-        <div class='big-txt-wrap'>
-        <h3 class="portfolio-lightbox__title">Angela Yao</h3> 
-        <h4 class = 'portfolio-lightbox__role'>ROLE</h4>
-        <p class='portfolio-lightbox__body'>
-                
-            Lipsum Lorem ipsum dolor sit amet consectetur adipisicing elit;    
-            Neque debitis in consectetur quo nostrum voluptate corporis de altes.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates libero maiores tempora quam quos
-            impedit quisquam ratione enim, dolores commodi saepe consequatur explicabo nam accusantium deserunt.
-            Accusantium sit nobis dolor.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quisquam dolorum temporibus quaerat
-            facere est sed magni tempora, eligendi adipisci voluptatibus molestias sequi a aspernatur et alias
-            iste ut blanditiis.
-  </p></div>
+        <img class = "team-member__big-picture" src = "https://picsum.photos/300/500" />
+        
     </div>
-    </div>
-
-            </div>
+    <a href = "#" class = "team-big__button team-big__button-close">  ✖ </a>
+    <a href = "#Beatriz" class = "team-big__button team-big__button-next"> > </a>
+</div>
 
 
 <!-- Beatriz -->
 
-            <div class="member">
-
-<!-- Card -->
-
-<div class="portfolio__item">
-    <a href="#Beatriz" class="button">
-        <img src="./team/Beatriz-small.png" alt="Beatriz" class="small">
-        <div class="portfolio__desc">
-            <h3 class="portfolio__title">Beatriz</h3>
-            <h4 class="portfolio__subtitle">Team Member</h4>
-        </div>
+<div class="team-member__small">
+    <a class="team-member__card" href="#Beatriz">
+        <img class = "team-member__small-picture" src = "https://picsum.photos/400/400" />
+        <p class = "team-member__small-desc">Beatriz</p>
     </a>
 </div>
 
 
-<!-- Lightbox -->
-
-<div class="portfolio-lightbox" id = 'Beatriz'>
-        <div class="portfolio-lightbox__nav">
-
-        <a href="#Angela" class="last">  &lt;    </a>
-        <a href="#" class="close"> &#10006; </a>
-        <a href="#Charity" class="next">  &gt;    </a>
-
+<div class="team-member__lightbox" id="Beatriz">
+    <a href = "#Angela" class = "team-big__button team-big__button-last"> < </a>
+   <div class = "team-member__big">
+        <div class = "team-member__textarea">
+            <h2 class = "team-member__title">Beatriz Laureano</h2>
+            <h4 class = "team-member__course">Bioprinting Team Member</h4>
+            <p>Beatriz is a recent Biomedical Engineering graduate from King’s College London and is currently pursuing a Master’s of research in Neurotechnology. Beatriz joined this year’s iGEM team due to her interest in regenerative medicine of the central nervous system and in research. This experience has proved to be extremely rewarding giving Beatriz not only further experience into research practices but many other areas such as: entrepreneurship, web design and video-editing, which she has found very rewarding for her career and believes has made her into a more complete professional. After completing her Master’s degree Beatriz hopes to pursue a PhD focusing in measuring biomarkers related to mental health disorders for immunotherapy treated patients in the hope to provide a more holistic cancer treatment to patients.</p>
         </div>
-        <div class="portfolio-lightbox__content">
-        <img src="./team/Beatriz-big.jpg" alt="Beatriz" class="big">
-        <div class='big-txt-wrap'>
-        <h3 class="portfolio-lightbox__title">Beatriz Laureano</h3> 
-        <h4 class = 'portfolio-lightbox__role'>ROLE</h4>
-        <p class='portfolio-lightbox__body'>
-                
-            Lipsum Lorem ipsum dolor sit amet consectetur adipisicing elit;    
-            Neque debitis in consectetur quo nostrum voluptate corporis de altes.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates libero maiores tempora quam quos
-            impedit quisquam ratione enim, dolores commodi saepe consequatur explicabo nam accusantium deserunt.
-            Accusantium sit nobis dolor.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quisquam dolorum temporibus quaerat
-            facere est sed magni tempora, eligendi adipisci voluptatibus molestias sequi a aspernatur et alias
-            iste ut blanditiis.
-  </p></div>
+        <img class = "team-member__big-picture" src = "https://picsum.photos/300/500" />
+        
     </div>
-    </div>
+    <a href = "#" class = "team-big__button team-big__button-close">  ✖ </a>
+    <a href = "#Charity" class = "team-big__button team-big__button-next"> > </a>
+</div>
 
-            </div>
 
 <!-- Charity -->
 
-            <div class="member">
-
-<!-- Card -->
-
-<div class="portfolio__item">
-    <a href="#Charity" class="button">
-        <img src="./team/Charity-small.png" alt="Charity" class="small">
-        <div class="portfolio__desc">
-            <h3 class="portfolio__title">Charity</h3>
-            <h4 class="portfolio__subtitle">Team Member</h4>
-        </div>
+<div class="team-member__small">
+    <a class="team-member__card" href="#Charity">
+        <img class = "team-member__small-picture" src = "https://picsum.photos/400/400" />
+        <p class = "team-member__small-desc">Charity</p>
     </a>
 </div>
 
-
-<!-- Lightbox -->
-
-<div class="portfolio-lightbox" id = 'Charity'>
-        <div class="portfolio-lightbox__nav">
-
-        <a href="#Beatriz" class="last">  &lt;    </a>
-        <a href="#" class="close"> &#10006; </a>
-        <a href="#Dimitar" class="next">  &gt;    </a>
-
+<div class="team-member__lightbox" id="Charity">
+    <a href = "#Beatriz" class = "team-big__button team-big__button-last"> < </a>
+   <div class = "team-member__big">
+        <div class = "team-member__textarea">
+            <h2 class = "team-member__title">Charity Teh</h2>
+            <h4 class = "team-member__course">SCI Team Member</h4>
+            <p>Charity is going into her final year of Biomedical Science BSc at King’s College London, specialising in immunology. Though doubtful at first whether iGEM, a synthetic biology competition, would help her attain expertise in her primary interest, the idea of independent, student-led research inspired her to participate. She subsequently found that many aspects of the project linked strongly to immunology, which even unearthed her passion for utilising immunology in therapeutics. She also attained valuable experience in HTML, CSS, Javascript, video editing, audio mixing, vector design, science communication and essential teamwork skills. In the future, she hopes to undertake a Masters degree in immunology, aiming to implement her iGEM experience in fields such as vaccine development, cancer biology and gene therapy. In her spare time, she enjoys playing badminton, experimenting with music production and spending quality time with friends and family!</p>
         </div>
-        <div class="portfolio-lightbox__content">
-        <img src="./team/Charity-big.jpg" alt="Charity" class="big">
-        <div class='big-txt-wrap'>
-        <h3 class="portfolio-lightbox__title">Charity Teh</h3> 
-        <h4 class = 'portfolio-lightbox__role'>ROLE</h4>
-        <p class='portfolio-lightbox__body'>
-                
-            Lipsum Lorem ipsum dolor sit amet consectetur adipisicing elit;    
-            Neque debitis in consectetur quo nostrum voluptate corporis de altes.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates libero maiores tempora quam quos
-            impedit quisquam ratione enim, dolores commodi saepe consequatur explicabo nam accusantium deserunt.
-            Accusantium sit nobis dolor.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quisquam dolorum temporibus quaerat
-            facere est sed magni tempora, eligendi adipisci voluptatibus molestias sequi a aspernatur et alias
-            iste ut blanditiis.
-  </p></div>
+        <img class = "team-member__big-picture" src = "https://picsum.photos/300/500" />
+        
     </div>
-    </div>
-
-            </div>
-
+    <a href = "#" class = "team-big__button team-big__button-close">  ✖ </a>
+    <a href = "#Dimitar" class = "team-big__button team-big__button-next"> > </a>
+</div>
 
 <!-- Dimitar -->
 
-            <div class="member">
-
-<!-- Card -->
-
-<div class="portfolio__item">
-    <a href="#Dimitar" class="button">
-        <img src="./team/Dimitar-small.png" alt="Dimitar" class="small">
-        <div class="portfolio__desc">
-            <h3 class="portfolio__title">Dimitar</h3>
-            <h4 class="portfolio__subtitle">Team Member</h4>
-        </div>
+<div class="team-member__small">
+    <a class="team-member__card" href="#Dimitar">
+        <img class = "team-member__small-picture" src = "https://picsum.photos/400/400" />
+        <p class = "team-member__small-desc">Dimitar</p>
     </a>
 </div>
 
-
-<!-- Lightbox -->
-
-<div class="portfolio-lightbox" id = 'Dimitar'>
-        <div class="portfolio-lightbox__nav">
-
-        <a href="#Charity" class="last">  &lt;    </a>
-        <a href="#" class="close"> &#10006; </a>
-        <a href="#Ela" class="next">  &gt;    </a>
-
+<div class="team-member__lightbox" id="Dimitar">
+    <a href = "#Charity" class = "team-big__button team-big__button-last"> < </a>
+   <div class = "team-member__big">
+        <div class = "team-member__textarea">
+            <h2 class = "team-member__title">Dimitar Dimitrov</h2>
+            <h4 class = "team-member__course">MFP Team Member</h4>
+            <p>Dimitar, better known as Mitko, is going into his third year of Molecular Genetics MSci at King’s College London. His main interests lie in the applications of biotechnology for clinical use. He joined this year’s iGEM team because he thought the research topic they had chosen had great potential in improving the lives of SCI patients. The project has allowed him to work on many fronts common to research such as science communication, application of coding skills, and teamwork. In the future he plans to continue with his degree and get involved with research into creating therapies based on synthetic biology.  </p>
         </div>
-        <div class="portfolio-lightbox__content">
-        <img src="./team/Dimitar-big.png" alt="Dimitar" class="big">
-        <div class='big-txt-wrap'>
-        <h3 class="portfolio-lightbox__title">Dimitar Dimitrov</h3> 
-        <h4 class = 'portfolio-lightbox__role'>ROLE</h4>
-        <p class='portfolio-lightbox__body'>
-                
-            Lipsum Lorem ipsum dolor sit amet consectetur adipisicing elit;    
-            Neque debitis in consectetur quo nostrum voluptate corporis de altes.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates libero maiores tempora quam quos
-            impedit quisquam ratione enim, dolores commodi saepe consequatur explicabo nam accusantium deserunt.
-            Accusantium sit nobis dolor.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quisquam dolorum temporibus quaerat
-            facere est sed magni tempora, eligendi adipisci voluptatibus molestias sequi a aspernatur et alias
-            iste ut blanditiis.
-  </p></div>
+        <img class = "team-member__big-picture" src = "https://picsum.photos/300/500" />
+        
     </div>
-    </div>
-
-            </div>
-
+    <a href = "#" class = "team-big__button team-big__button-close">  ✖ </a>
+    <a href = "#Ela" class = "team-big__button team-big__button-next"> > </a>
+</div>
 
 <!-- Ela -->
 
-            <div class="member">
-
-<!-- Card -->
-
-<div class="portfolio__item">
-    <a href="#Ela" class="button">
-        <img src="./team/Ela-small.png" alt="Ela" class="small">
-        <div class="portfolio__desc">
-            <h3 class="portfolio__title">Ela</h3>
-            <h4 class="portfolio__subtitle">Bioprinitng Co-Lead</h4>
-        </div>
+<div class="team-member__small">
+    <a class="team-member__card" href="#Ela">
+        <img class = "team-member__small-picture" src = "https://picsum.photos/400/400" />
+        <p class = "team-member__small-desc">Ela</p>
     </a>
 </div>
 
 
-<!-- Lightbox -->
-
-<div class="portfolio-lightbox" id = 'Ela'>
-        <div class="portfolio-lightbox__nav">
-
-        <a href="#Dimitar" class="last">  &lt;    </a>
-        <a href="#" class="close"> &#10006; </a>
-        <a href="#Emily" class="next">  &gt;    </a>
-
+<div class="team-member__lightbox" id="Ela">
+    <a href = "#Dimitar" class = "team-big__button team-big__button-last"> < </a>
+   <div class = "team-member__big">
+        <div class = "team-member__textarea">
+            <h2 class = "team-member__title">Ela Kanani</h2>
+            <h4 class = "team-member__course">Bioprinting Team Leader</h4>
+            <p>Ela is currently undertaking her MSc in Medical Robotics and Artificial Intelligence at University College London, after graduating from her Biomedical Engineering BEng at King’s College London in 2021. She is passionate about furthering technological advancements in the medical field; particularly within assistive, surgical and rehabilitation robotics as she plans to pursue a PhD in this field. She joined the 2020 team after initially being drawn to the opportunity to carry out novel research in a multidisciplinary team, and during the process she gained a wealth of technical skills and a love for synthetic biology, motivating her to continue working on Phase II of the project. Outside of academia Ela enjoys both listening to and playing music—often going to gigs and spending her free time playing guitar. </p>
         </div>
-        <div class="portfolio-lightbox__content">
-        <img src="./team/Ela-big.png" alt="Ela" class="big">
-        <div class='big-txt-wrap'>
-        <h3 class="portfolio-lightbox__title">Ela FILLNAME</h3> 
-        <h4 class = 'portfolio-lightbox__role'>ROLE</h4>
-        <p class='portfolio-lightbox__body'>
-                
-            Lipsum Lorem ipsum dolor sit amet consectetur adipisicing elit;    
-            Neque debitis in consectetur quo nostrum voluptate corporis de altes.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates libero maiores tempora quam quos
-            impedit quisquam ratione enim, dolores commodi saepe consequatur explicabo nam accusantium deserunt.
-            Accusantium sit nobis dolor.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quisquam dolorum temporibus quaerat
-            facere est sed magni tempora, eligendi adipisci voluptatibus molestias sequi a aspernatur et alias
-            iste ut blanditiis.
-  </p></div>
+        <img class = "team-member__big-picture" src = "https://picsum.photos/300/500" />
+        
     </div>
-    </div>
-
-            </div>
-
+    <a href = "#" class = "team-big__button team-big__button-close">  ✖ </a>
+    <a href = "#Emily" class = "team-big__button team-big__button-next"> > </a>
+</div>
 
 <!-- Emily -->
 
-            <div class="member">
-
-<!-- Card -->
-
-<div class="portfolio__item">
-    <a href="#Emily" class="button">
-        <img src="./team/Emily-small.png" alt="Emily" class="small">
-        <div class="portfolio__desc">
-            <h3 class="portfolio__title">Emily</h3>
-            <h4 class="portfolio__subtitle">Team Member</h4>
-        </div>
+<div class="team-member__small">
+    <a class="team-member__card" href="#Emily">
+        <img class = "team-member__small-picture" src = "https://picsum.photos/400/400" />
+        <p class = "team-member__small-desc">Emily</p>
     </a>
 </div>
 
-
-<!-- Lightbox -->
-
-<div class="portfolio-lightbox" id = 'Emily'>
-        <div class="portfolio-lightbox__nav">
-
-        <a href="#Ela" class="last">  &lt;    </a>
-        <a href="#" class="close"> &#10006; </a>
-        <a href="#Finn" class="next">  &gt;    </a>
-
+<div class="team-member__lightbox" id="Emily">
+    <a href = "#Ela" class = "team-big__button team-big__button-last"> < </a>
+   <div class = "team-member__big">
+        <div class = "team-member__textarea">
+            <h2 class = "team-member__title">Emily Kostina</h2>
+            <h4 class = "team-member__course">Bioprinting Team Member</h4>
+            <p>Emily is going into the final year of her Biomedical Science BSc at King’s College London. Her research interests are in human anatomy and development, however during iGEM she discovered a new passion for biotechnology after being part of the Bioprinting Subgroup. Alongside science and research she is fond of art and film and iGEM allowed her to pursue this interest by creating social media content, infographics and short video clips. After her undergraduate degree Emily hopes to continue further education by doing research in the field of birth defects and neonatal care.</p>
         </div>
-        <div class="portfolio-lightbox__content">
-        <img src="./team/Emily-big.JPG" alt="Emily" class="big">
-        <div class='big-txt-wrap'>
-        <h3 class="portfolio-lightbox__title">Emily Kostina</h3> 
-        <h4 class = 'portfolio-lightbox__role'>ROLE</h4>
-        <p class='portfolio-lightbox__body'>
-                
-            Lipsum Lorem ipsum dolor sit amet consectetur adipisicing elit;    
-            Neque debitis in consectetur quo nostrum voluptate corporis de altes.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates libero maiores tempora quam quos
-            impedit quisquam ratione enim, dolores commodi saepe consequatur explicabo nam accusantium deserunt.
-            Accusantium sit nobis dolor.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quisquam dolorum temporibus quaerat
-            facere est sed magni tempora, eligendi adipisci voluptatibus molestias sequi a aspernatur et alias
-            iste ut blanditiis.
-  </p></div>
+        <img class = "team-member__big-picture" src = "https://picsum.photos/300/500" />
+        
     </div>
-    </div>
-
-            </div>
-
+    <a href = "#" class = "team-big__button team-big__button-close">  ✖ </a>
+    <a href = "#Finn" class = "team-big__button team-big__button-next"> > </a>
+</div>
 
 <!-- Finn -->
 
-            <div class="member">
+<div class="team-member__small">
+    <a class="team-member__card" href="#Finn">
+        <img class = "team-member__small-picture" src = "https://picsum.photos/400/400" />
+        <p class = "team-member__small-desc">Finn</p>
+    </a>
+</div>
 
-<!-- Card -->
-
-<div class="portfolio__item">
-    <a href="#Finn" class="button">
-        <img src="./team/Finn-small.png" alt="Finn" class="small">
-        <div class="portfolio__desc">
-            <h3 class="portfolio__title">Finn</h3>
-            <h4 class="portfolio__subtitle">Team Member</h4>
+<div class="team-member__lightbox" id="Finn">
+    <a href = "#Emily" class = "team-big__button team-big__button-last"> < </a>
+   <div class = "team-member__big">
+        <div class = "team-member__textarea">
+            <h2 class = "team-member__title">Finn Hull</h2>
+            <h4 class = "team-member__course">SCI Team Member</h4>
+            <p> Finn has recently completed his BSc in Psychology at King’s College London and is aiming to successfully earn a place on a graduate scheme for management consultancy in 2022. Finn’s initial interest in iGEM stemmed from a desire to research topics with a greater neuroscientific and biotechnological focus than was within the scope of his degree. He was inspired to   apply problem solving skills to help develop a project and understand many of the concepts surrounding consultancy. Academically, Finn is primarily interested in novel neuromodulatory techniques, such as opto and chemogenetics, however, he is also an avid runner and collector of archive clothing.</p>
         </div>
+        <img class = "team-member__big-picture" src = "https://picsum.photos/300/500" />
+        
+    </div>
+    <a href = "#" class = "team-big__button team-big__button-close">  ✖ </a>
+    <a href = "#Harsh" class = "team-big__button team-big__button-next"> > </a>
+</div>
+
+<!-- Harsh -->
+
+<div class="team-member__small">
+    <a class="team-member__card" href="#Harsh">
+        <img class = "team-member__small-picture" src = "https://picsum.photos/400/400" />
+        <p class = "team-member__small-desc">Harsh</p>
     </a>
 </div>
 
 
-<!-- Lightbox -->
-
-<div class="portfolio-lightbox" id = 'Finn'>
-        <div class="portfolio-lightbox__nav">
-
-        <a href="#Emily" class="last">  &lt;    </a>
-        <a href="#" class="close"> &#10006; </a>
-        <a href="#Harsh" class="next">  &gt;    </a>
-
+<div class="team-member__lightbox" id="Harsh">
+    <a href = "#Finn" class = "team-big__button team-big__button-last"> < </a>
+   <div class = "team-member__big">
+        <div class = "team-member__textarea">
+            <h2 class = "team-member__title">Harsh Bumia</h2>
+            <h4 class = "team-member__course">MFP Team Leader</h4>
+            <p>Harsh completed his BSc in Biochemistry at King’s College London, Harsh is now undertaking a MSc in Cell and Gene Therapy at University College London. After participating in the KCL iGEM 2020 team, he joined the 2021 team to further develop the Renervate Therapeutics project. His interests lie in immunotherapies and immuno-oncology. After completing his Masters degree, Harsh plans to pursue a career in the Biotechnology and Biopharmaceutical industry. </p>
         </div>
-        <div class="portfolio-lightbox__content">
-        <img src="./team/Finn-big.png" alt="Finn" class="big">
-        <div class='big-txt-wrap'>
-        <h3 class="portfolio-lightbox__title">Finn Hull</h3> 
-        <h4 class = 'portfolio-lightbox__role'>ROLE</h4>
-        <p class='portfolio-lightbox__body'>
-                
-            Lipsum Lorem ipsum dolor sit amet consectetur adipisicing elit;    
-            Neque debitis in consectetur quo nostrum voluptate corporis de altes.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates libero maiores tempora quam quos
-            impedit quisquam ratione enim, dolores commodi saepe consequatur explicabo nam accusantium deserunt.
-            Accusantium sit nobis dolor.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quisquam dolorum temporibus quaerat
-            facere est sed magni tempora, eligendi adipisci voluptatibus molestias sequi a aspernatur et alias
-            iste ut blanditiis.
-  </p></div>
+        <img class = "team-member__big-picture" src = "https://picsum.photos/300/500" />
+        
     </div>
-    </div>
-
-            </div>
-
-
- <!-- Harsh -->
-
-            <div class="member">
-
-<!-- Card -->
-
-<div class="portfolio__item">
-    <a href="#" class="button">
-        <img src="./team/Harsh-small.png" alt="Harsh" class="small">
-        <div class="portfolio__desc">
-            <h3 class="portfolio__title">Harsh</h3>
-            <h4 class="portfolio__subtitle">MFP Leader</h4>
-        </div>
-    </a>
+    <a href = "#" class = "team-big__button team-big__button-close">  ✖ </a>
+    <a href = "#Kalyan" class = "team-big__button team-big__button-next"> > </a>
 </div>
-
-
-<!-- Lightbox -->
-
-<div class="portfolio-lightbox" id = 'Harsh'>
-        <div class="portfolio-lightbox__nav">
-
-        <a href="#Finn" class="last">  &lt;    </a>
-        <a href="#" class="close"> &#10006; </a>
-        <a href="#Kalyan" class="next">  &gt;    </a>
-
-        </div>
-        <div class="portfolio-lightbox__content">
-        <img src="./team/Harsh-big.jpg" alt="Harsh" class="big">
-        <div class='big-txt-wrap'>
-        <h3 class="portfolio-lightbox__title">Harsh Bumia</h3> 
-        <h4 class = 'portfolio-lightbox__role'>ROLE</h4>
-        <p class='portfolio-lightbox__body'>
-                
-            Lipsum Lorem ipsum dolor sit amet consectetur adipisicing elit;    
-            Neque debitis in consectetur quo nostrum voluptate corporis de altes.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates libero maiores tempora quam quos
-            impedit quisquam ratione enim, dolores commodi saepe consequatur explicabo nam accusantium deserunt.
-            Accusantium sit nobis dolor.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quisquam dolorum temporibus quaerat
-            facere est sed magni tempora, eligendi adipisci voluptatibus molestias sequi a aspernatur et alias
-            iste ut blanditiis.
-  </p></div>
-    </div>
-    </div>
-
-            </div>
-
 
 <!-- Kalyan -->
 
-            <div class="member">
-            
-<!-- Card -->
-
-<div class="portfolio__item">
-    <a href="#Kalyan" class="button">
-        <img src="./team/Kalyan-small.png" alt="Kalyan" class="small">
-        <div class="portfolio__desc">
-            <h3 class="portfolio__title">Kalyan</h3>
-            <h4 class="portfolio__subtitle">Team Member</h4>
-        </div>
+<div class="team-member__small">
+    <a class="team-member__card" href="#Kalyan">
+        <img class = "team-member__small-picture" src = "https://picsum.photos/400/400" />
+        <p class = "team-member__small-desc">Kalyan</p>
     </a>
 </div>
 
-
-<!-- Lightbox -->
-
-<div class="portfolio-lightbox" id = 'Kalyan'>
-        <div class="portfolio-lightbox__nav">
-
-        <a href="#Harsh" class="last">  &lt;    </a>
-        <a href="#" class="close"> &#10006; </a>
-        <a href="#Kate" class="next">  &gt;    </a>
-
+<div class="team-member__lightbox" id="Kalyan">
+    <a href = "#Harsh" class = "team-big__button team-big__button-last"> < </a>
+   <div class = "team-member__big">
+        <div class = "team-member__textarea">
+            <h2 class = "team-member__title">Kalyan (Venkata) Ghadiyaram</h2>
+            <h4 class = "team-member__course">MFP Team Member</h4>
+            <p> Kalyan is a second year student in molecular genetics at King's College London. Kalyan is passionate about the intersection of genes and disease, particularly looking into ways to treat major genetic diseases like rheumatoid arthritis, cancer and cystic fibrosis. Additionally, he is interested in the ethical implications involved in synthetic biology and genetic research. Kalyan joined iGEM in 2021 due to a passion for novel scientific research and breakthroughs, wanting to see how a research project works from start to finish. Additionally, he saw this as an opportunity to look at how the medtech world functions and how a startup actually develops from the ground up. In the future, Kalyan sees himself working in groups dedicated to treating some of the major illnesses affecting the planet and working with communities to build robust healthcare strategies to address current medical problems.</p>
         </div>
-        <div class="portfolio-lightbox__content">
-        <img src="./team/Kalyan-big.jpg" alt="Kalyan" class="big">
-        <div class='big-txt-wrap'>
-        <h3 class="portfolio-lightbox__title">Kalyan FILLNAME</h3> 
-        <h4 class = 'portfolio-lightbox__role'>ROLE</h4>
-        <p class='portfolio-lightbox__body'>
-                
-            Lipsum Lorem ipsum dolor sit amet consectetur adipisicing elit;    
-            Neque debitis in consectetur quo nostrum voluptate corporis de altes.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates libero maiores tempora quam quos
-            impedit quisquam ratione enim, dolores commodi saepe consequatur explicabo nam accusantium deserunt.
-            Accusantium sit nobis dolor.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quisquam dolorum temporibus quaerat
-            facere est sed magni tempora, eligendi adipisci voluptatibus molestias sequi a aspernatur et alias
-            iste ut blanditiis.
-  </p></div>
+        <img class = "team-member__big-picture" src = "https://picsum.photos/300/500" />
+        
     </div>
-    </div>
-
-            </div>
-
+    <a href = "#" class = "team-big__button team-big__button-close">  ✖ </a>
+    <a href = "#Kate" class = "team-big__button team-big__button-next"> > </a>
+</div>
 
 <!-- Kate -->
 
-            <div class="member">
-
-<!-- Card -->
-
-<div class="portfolio__item">
-    <a href="#Kate" class="button">
-        <img src="./team/Kate-small.png" alt="Kate" class="small">
-        <div class="portfolio__desc">
-            <h3 class="portfolio__title">Kate</h3>
-            <h4 class="portfolio__subtitle">Team Member</h4>
-        </div>
+<div class="team-member__small">
+    <a class="team-member__card" href="#Kate">
+        <img class = "team-member__small-picture" src = "https://picsum.photos/400/400" />
+        <p class = "team-member__small-desc">Kate</p>
     </a>
 </div>
 
-
-<!-- Lightbox -->
-
-<div class="portfolio-lightbox" id = 'Kate'>
-        <div class="portfolio-lightbox__nav">
-
-        <a href="#Kalyan" class="last">  &lt;    </a>
-        <a href="#" class="close"> &#10006; </a>
-        <a href="#Milan" class="next">  &gt;    </a>
-
+<div class="team-member__lightbox" id="Kate">
+    <a href = "#Kalyan" class = "team-big__button team-big__button-last"> < </a>
+   <div class = "team-member__big">
+        <div class = "team-member__textarea">
+            <h2 class = "team-member__title">Kate Flanagan</h2>
+            <h4 class = "team-member__course">SCI Team Leader</h4>
+            <p>Kate is in her third year of her MSci in Molecular Genetics at KCL and has a particular interest in gene therapies and regenerative medicine. iGEM provided the perfect opportunity to see genetics and regenerative medicine in a real-world application, which was the primary motivation for Kate’s participation in iGEM. Aside from academic interests, Kate enjoys travelling and playing team sports. Her appreciation for working as part of a team is part of the reason she wants to pursue a career in research following iGEM and her current degree. </p>
         </div>
-        <div class="portfolio-lightbox__content">
-        <img src="./team/Kate-big.jpeg" alt="Kate" class="big">
-        <div class='big-txt-wrap'>
-        <h3 class="portfolio-lightbox__title">Kate FILLNAME</h3> 
-        <h4 class = 'portfolio-lightbox__role'>ROLE</h4>
-        <p class='portfolio-lightbox__body'>
-                
-            Lipsum Lorem ipsum dolor sit amet consectetur adipisicing elit;    
-            Neque debitis in consectetur quo nostrum voluptate corporis de altes.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates libero maiores tempora quam quos
-            impedit quisquam ratione enim, dolores commodi saepe consequatur explicabo nam accusantium deserunt.
-            Accusantium sit nobis dolor.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quisquam dolorum temporibus quaerat
-            facere est sed magni tempora, eligendi adipisci voluptatibus molestias sequi a aspernatur et alias
-            iste ut blanditiis.
-  </p></div>
+        <img class = "team-member__big-picture" src = "https://picsum.photos/300/500" />
+        
     </div>
-    </div>
-
-            </div>
+    <a href = "#" class = "team-big__button team-big__button-close">  ✖ </a>
+    <a href = "#Milan" class = "team-big__button team-big__button-next"> > </a>
+</div>
 
 
 <!-- Milan -->
-            
-            <div class="member">
 
-<!-- Card -->
-
-<div class="portfolio__item">
-    <a href="#Milan" class="button">
-        <img src="./team/Milan-small.png" alt="Milan" class="small">
-        <div class="portfolio__desc">
-            <h3 class="portfolio__title">Milan</h3>
-            <h4 class="portfolio__subtitle">Team Member</h4>
-        </div>
+<div class="team-member__small">
+    <a class="team-member__card" href="#Milan">
+        <img class = "team-member__small-picture" src = "https://picsum.photos/400/400" />
+        <p class = "team-member__small-desc">Milan</p>
     </a>
 </div>
 
 
-<!-- Lightbox -->
-
-<div class="portfolio-lightbox" id = 'Milan'>
-        <div class="portfolio-lightbox__nav">
-
-        <a href="#Kate" class="last">  &lt;    </a>
-        <a href="#" class="close"> &#10006; </a>
-        <a href="#Remy" class="next">  &gt;    </a>
-
+<div class="team-member__lightbox" id="Milan">
+    <a href = "#Kate" class = "team-big__button team-big__button-last"> < </a>
+   <div class = "team-member__big">
+        <div class = "team-member__textarea">
+            <h2 class = "team-member__title">Milan Singh</h2>
+            <h4 class = "team-member__course">MFP Team Member</h4>
+            <p> Milan has entered her final year studying Chemistry with Biomedicine BSc at King’s College London. Her main academic interest lies within medicinal chemistry and its applications in the pharmaceutical industry. She has always been fascinated by how different STEM subjects relate to each other, which is one of the reasons why she joined iGEM. Renervate Therapeutics gave her a taste of what independent research looks like, as she is considering pursuing a PhD. She believes in making her field of study more accessible to other students, so she dedicates her free time as editor of “The Catalyst”, a chemistry magazine she co-founded. She also loves to read classical and scientific books and her biggest inspiration is Marie Curie. </p>
+        </div>
+        <img class = "team-member__big-picture" src = "https://picsum.photos/300/500" />
+        
     </div>
-    <div class="portfolio-lightbox__content">
-    <img src="./team/Milan-big.PNG" alt="Milan" class="big">
-    <div class='big-txt-wrap'>
-    <h3 class="portfolio-lightbox__title">Milan Singh</h3>
-    <h4 class='portfolio-lightbox__role'>ROLE</h4>
-    <p class="portfolio-lightbox__body">
-                
-            Lipsum Lorem ipsum dolor sit amet consectetur adipisicing elit;    
-            Neque debitis in consectetur quo nostrum voluptate corporis de altes.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates libero maiores tempora quam quos
-            impedit quisquam ratione enim, dolores commodi saepe consequatur explicabo nam accusantium deserunt.
-            Accusantium sit nobis dolor.
-  </p></div>
-    </div>
-    </div>
-
-            </div>
-
+    <a href = "#" class = "team-big__button team-big__button-close">  ✖ </a>
+    <a href = "#Remy" class = "team-big__button team-big__button-next"> > </a>
+</div>
 
 <!-- Remy -->
 
-            <div class="member">
-
-<!-- Card -->
-
-<div class="portfolio__item">
-    <a href="#Remy" class="button">
-        <img src="./team/Remy-small.jpeg" alt="Remy" class="small">
-        <div class="portfolio__desc">
-            <h3 class="portfolio__title">Remy</h3>
-            <h4 class="portfolio__subtitle">Bioprinitng Co-lead</h4>
-        </div>
+<div class="team-member__small">
+    <a class="team-member__card" href="#Remy">
+        <img class = "team-member__small-picture" src = "https://picsum.photos/400/400" />
+        <p class = "team-member__small-desc">Remy</p>
     </a>
 </div>
 
-
-<!-- Lightbox -->
-
-<div class="portfolio-lightbox" id = 'Remy'>
-        <div class="portfolio-lightbox__nav">
-
-        <a href="#Milan" class="last">  &lt;    </a>
-        <a href="#" class="close"> &#10006; </a>
-        <a href="#Thurga" class="next">  &gt;    </a>
-
+<div class="team-member__lightbox" id="Remy">
+    <a href = "#Milan" class = "team-big__button team-big__button-last"> < </a>
+   <div class = "team-member__big">
+        <div class = "team-member__textarea">
+            <h2 class = "team-member__title">Remy Tran</h2>
+            <h4 class = "team-member__course">Bioprinting Team Leader</h4>
+            <p>Remy graduated in July 2021 from King’s College London in Biomedical Engineering (BEng). In October 2021, he joined Imperial College London to pursue a Master’s in Medical Device Design and Entrepreneurship. He joined iGEM in 2020 because of the opportunity to have a direct impact on the lives of patients and stayed on for the following year to have continued engagement with researchers across the world. Outside of iGEM, he loves trying new food, playing board games, and can usually be found exploring a new quirky neighbourhood in London, with a Brandon Sanderson novel in hand.</p>
         </div>
-<div class="portfolio-lightbox__content">
-
-        <img src="./team/Remy-big.jpeg" alt="Remy" class="big">
-        <div class='big-txt-wrap'>
-        <h3 class="portfolio-lightbox__title">Remy FILLNAME</h3> 
-        <h4 class = 'portfolio-lightbox__role'>ROLE</h4>
-        <p class='portfolio-lightbox__body'>
-                
-            Lipsum Lorem ipsum dolor sit amet consectetur adipisicing elit;    
-            Neque debitis in consectetur quo nostrum voluptate corporis de altes.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates libero maiores tempora quam quos
-            impedit quisquam ratione enim, dolores commodi saepe consequatur explicabo nam accusantium deserunt.
-            Accusantium sit nobis dolor.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quisquam dolorum temporibus quaerat
-            facere est sed magni tempora, eligendi adipisci voluptatibus molestias sequi a aspernatur et alias
-            iste ut blanditiis.
-  </p>
+        <img class = "team-member__big-picture" src = "https://picsum.photos/300/500" />
+        
     </div>
-    </div>
-    </div>
-    </div>
-
+    <a href = "#" class = "team-big__button team-big__button-close">  ✖ </a>
+    <a href = "#Thurga" class = "team-big__button team-big__button-next"> > </a>
+</div>
 
 <!-- Thurga -->
 
-            <div class="member">
-
-<!-- Card -->
-
-<div class="portfolio__item">
-    <a href="#Thurga" class="button">
-        <img src="./team/Thurga-small.png" alt="Thurga" class="small">
-        <div class="portfolio__desc">
-            <h3 class="portfolio__title">Thurga</h3>
-            <h4 class="portfolio__subtitle">Team Member</h4>
-        </div>
+<div class="team-member__small">
+    <a class="team-member__card" href="#Thurga">
+        <img class = "team-member__small-picture" src = "https://picsum.photos/400/400" />
+        <p class = "team-member__small-desc">Thurga</p>
     </a>
 </div>
 
-
-<!-- Lightbox -->
-
-<div class="portfolio-lightbox" id = 'Thurga'>
-        <div class="portfolio-lightbox__nav">
-
-        <a href="#Remy" class="last">  &lt;    </a>
-        <a href="#" class="close"> &#10006; </a>
-        <a href="#Alya" class="next">  &gt;    </a>
-
+<div class="team-member__lightbox" id="Thurga">
+    <a href = "#Remy" class = "team-big__button team-big__button-last"> < </a>
+   <div class = "team-member__big">
+        <div class = "team-member__textarea">
+            <h2 class = "team-member__title">Thurga Reshe Navaseelan</h2>
+            <h4 class = "team-member__course">Bioprinting Team Member</h4>
+            <p>Thurga is currently in her third year of Biomedical Engineering at King’s College London. Her interests are mainly in regenerative medicine and rehabilitation and she is hoping to pursue a Masters degree related to this field on completion of her undergraduate degree. She joined the iGEM team for the opportunity to work collaboratively in such a passionate, multidisciplinary team towards such an amazing goal. iGEM has further fuelled her fascination with synthetic biology and its many applications, while also allowing her to both apply and expand her skill set. When she is not studying or doing iGEM, Thurga is probably binge-watching a show, staying up late to read a whole book or trying to get her 3D printer to print something successfully. </p>
         </div>
-        <div class="portfolio-lightbox__content">
-        <img src="./team/Thurga-big.jpg" alt="Thurga" class="big">
-        <div class='big-txt-wrap'>
-        <h3 class="portfolio-lightbox__title">Thurga FILLNAME</h3> 
-        <h4 class = 'portfolio-lightbox__role'>ROLE</h4>
-        <p class='portfolio-lightbox__body'>
-                
-            Lipsum Lorem ipsum dolor sit amet consectetur adipisicing elit;    
-            Neque debitis in consectetur quo nostrum voluptate corporis de altes.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates libero maiores tempora quam quos
-            impedit quisquam ratione enim, dolores commodi saepe consequatur explicabo nam accusantium deserunt.
-            Accusantium sit nobis dolor.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quisquam dolorum temporibus quaerat
-            facere est sed magni tempora, eligendi adipisci voluptatibus molestias sequi a aspernatur et alias
-            iste ut blanditiis.
-  </p></div>
+        <img class = "team-member__big-picture" src = "https://picsum.photos/300/500" />
+        
     </div>
-    </div>
-
-            </div>
-       
-    
-    <!-- End groups --></div>
+    <a href = "#" class = "team-big__button team-big__button-close">  ✖ </a>
+    <a href = "#Alya" class = "team-big__button team-big__button-next"> > </a>
 </div>
 
 
+
+</div>
+
+<!-- TEAM CODE ENDS -->
 
 
     </body>
