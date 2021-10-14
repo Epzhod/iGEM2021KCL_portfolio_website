@@ -51,7 +51,7 @@
 }
 
 .team-member__lightbox:target{
-    background-color: rgba(0,0,0,0.8);
+    background-color: #00000060;
     position: fixed;
     top: 0;
     left: 0;
@@ -68,9 +68,9 @@
 
 .team-member__big{
     position: fixed;
-    background: blue;
-    height: 35vw;
-    width: 60vw;
+    background: var(--uranian);
+    height: 40vw;
+    width: 80vw;
     display: grid;
     grid-template-columns: 15fr 5fr;
     gap: 2vw;
@@ -80,37 +80,38 @@
 }
 
 .team-member__big-picture{
-    width: 26.25vw;
+    width: 30vw;
     border-radius: 20px;
 }
 .team-member__textarea {
-    font-size: 2vw;
+    font-size: 1.5vw;
+    text-align: justify;
 }
 
 .team-big__button{
     width: 2vw;
     font-size: 3vw;
     position: relative;
-    color: red;
+    color: var(--cobalt);
     z-index: 10;
     text-decoration: none;
     font-weight: 900;
 }
 
 .team-big__button-last{
-    left: -38vw;
+    left: -44vw;
     font-size: 6vw;
 }
 
 .team-big__button-next{
-    right: -38vw;
+    right: -43vw;
     font-size: 6vw;
 }
 
 .team-big__button-close{
-    right: -33vw;
+    right: -38vw;
     position: relative;
-    top: -16vw;
+    top: -18vw;
     font-size: 4vw;
     font-weight: 300;
 }
