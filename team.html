@@ -39,10 +39,6 @@
     padding-bottom: 2vw;
 }
 
-.team-page__wrapper a{
-    color: var(--prussian);
-}
-
 .team-member__small {
    border:dashed 0.08em blue; 
    width: 20vw;
@@ -69,7 +65,7 @@
 }
 
 .team-member__lightbox:target{
-    background-color: #00000060;
+    background-color: rgba(255, 255, 255, 0.75);
     position: fixed;
     top: 0;
     left: 0;
@@ -83,7 +79,6 @@
 }
 
 
-
 .team-member__big{
     position: fixed;
     background: linear-gradient(90deg, var(--prussian) 60%, var(--uranian) 60%);
@@ -94,7 +89,7 @@
     gap: 2vw;
     padding-left: 2vw;
     /*padding-right: 0.5vw;*/
-    border-radius: 20px;
+    border-radius: 5vw;
 }
 
 .team-member__big-picture{
@@ -116,7 +111,8 @@
     width: 2vw;
     font-size: 3vw;
     position: relative;
-    color: var(--prussian);
+    color: var(--pear);
+    filter: brightness(0%);
     z-index: 10;
     text-decoration: none;
     font-weight: 500;
