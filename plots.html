@@ -11,6 +11,124 @@
 </head>
 <body>
 
+<!-- BEGINIG OF PHYSTECH CODE -->
+
+<style>
+    
+    .plots__container {
+    font-family: Heebo;
+    background-color:#c4e3fd;                
+                --pear: #cde43a ;
+                --seagreen: #58bc82 ;
+                --prussian: #13293d;
+                --uranian: #c4e3fd;
+                --dodger: #4895ef;
+                --cobalt: #1446a0;
+    padding: 0px;
+    margin: auto;
+    width: 80vw;
+}
+
+.plots-plot__container {
+    display: flex;
+    flex-direction: column;
+    width: clamp(200px, 30vw, 40vw);
+    font-size: clamp(9px, 1vw, 2vw);
+    padding: 0.5em;
+    align-items: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.plots-plot__image {
+    width: clamp(200px, 30vw, 40vw);
+    background-color: white;
+    margin-top: 2rem;
+}
+
+.plots-plot__description {
+    font-size: clamp(9px, 1vw, 2vw);
+    width: clamp(200px, 28vw, 40vw);
+    text-align: justify;
+    background-color: var(--uranian);
+    padding: 1vw;
+    margin-bottom: 2rem;
+}
+
+.plots-logplots__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.plots-RMSDplots__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.plots-otherplots__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+
+.plots-mutations__container {
+    background-color: #cde43a;
+    max-width: 85vw;
+    margin: auto;
+}
+
+.plots-mutations__table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.plots-mutations__plot {
+    padding-top: 2rem;
+    background-color: #cde43a;
+    width: clamp(200px, 30vw, 70vw);
+}
+
+.plots-mutations__description {
+    display: block;
+    margin: auto;
+    padding: 1em;
+}
+
+.plots-explanation__title {
+    background-color: var(--prussian);
+    color: white;
+    margin: auto;
+    padding: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 0.25rem;
+    text-indent: 1rem;
+}
+
+.plots-explanation__text {
+    background-color: var(--cobalt);
+    color: white;
+    margin: auto;
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+
+}
+
+</style>
+
+
+
 <div class="plots__container">
 
 </br>
@@ -36,36 +154,36 @@ In order to simulate those mutations in silico we compared the canonical 1HN0 st
 <div class="plots-logplots__container">
     <div class="plots-plot__container">
         <img class = "plots-plot__image" src = 'https://2021.igem.org/wiki/images/6/64/T--KCL_UK--Phystech17.png' />
-        <i class = "plots-plot__description"> A plot of the RMSD values of the wild-type ChABC measured over a hundered 1 second frames. The values are separated based on whether the values were gathered from the sidechains or the backbone of the protein model.</i>
+        <i class = "plots-plot__description"> Figure1: A plot of the RMSD values of the wild-type ChABC measured over a hundered 1 second frames. The values are separated based on whether the values were gathered from the sidechains or the backbone of the protein model.</i>
     </div>
     
     <div class="plots-plot__container">
         <img class = "plots-plot__image" src = 'https://2021.igem.org/wiki/images/3/3a/T--KCL_UK--Phystech12.png' />
-        <i class = "plots-plot__description"> A plot of the RMSD values of the mutated ChABC measured over a hundered 1 second frames. The values are separated based on whether the values were gathered from the sidechains or the backbone of the protein model.</i>
+        <i class = "plots-plot__description"> Figure2: A plot of the RMSD values of the mutated ChABC measured over a hundered 1 second frames. The values are separated based on whether the values were gathered from the sidechains or the backbone of the protein model.</i>
     </div>
     
 </div>
 
 
 <h2 class="plots-explanation__title">Analysis of total results by RMSD</h2>
-<p class="plots-explanation__text">In Figure 1 we can see the protein structures of WT and MUT deviating over time until they stabilise around fifteen frames after the beginning of the modelling. The deviation is measured using Root Mean Square Deviation. To better understand the results, we converted the data into a distribution curve that would show if we improved the RMSD over the length of time of simulation. Figure 2, shows those distributions. According to the data shown, the mutations were overall successful. The backbone RMSD for WT was 2.25 with a maximum of 3.57, while for MUT it was 1.88 with a maximum of 2.57 units. The sidechain distribution did not significantly change. However, the RMSD scores for the whole protein did change from 2.25 with maximum 3.57 for WT and 1.88 with maximum 2.57 for MUT. The fact that the values for the backbone and the total change in RMSD are the same to three significant figures suggests that the improvement of backbone stability plays a key role in the overall stability of the protein. </p>
+<p class="plots-explanation__text">In Figures 1 and 2 we can see the protein structures of WT and MUT deviating over time until they stabilise around fifteen frames after the beginning of the modelling. The deviation is measured using Root Mean Square Deviation. To better understand the results, we converted the data into a distribution curve that would show if we improved the RMSD over the length of time of simulation. Figures 3 to 5 show those distributions. According to the data shown, the mutations were overall successful. The backbone RMSD for WT was 2.25 with a maximum of 3.57, while for MUT it was 1.88 with a maximum of 2.57 units. The sidechain distribution did not significantly change. However, the RMSD scores for the whole protein did change from 2.25 with maximum 3.57 for WT and 1.88 with maximum 2.57 for MUT. The fact that the values for the backbone and the total change in RMSD are the same to three significant figures suggests that the improvement of backbone stability plays a key role in the overall stability of the protein. </p>
 
 
 <div class="plots-RMSDplots__container">
 
     <div class="plots-plot__container">
         <img class = "plots-plot__image" src = 'https://2021.igem.org/wiki/images/7/77/T--KCL_UK--Phystech11.png' />
-        <i class = "plots-plot__description"> A comparison between the distributions for the frames of the backbone RMSD values of the wild-type and mutated ChABC protein models. The difference was statistically significant (p = 2.6e-9)</i>
+        <i class = "plots-plot__description"> Figure 3: A comparison between the distributions for the frames of the backbone RMSD values of the wild-type and mutated ChABC protein models. The difference was statistically significant (p = 2.6e-9)</i>
     </div>
 
     <div class="plots-plot__container">
         <img class = "plots-plot__image" src = 'https://2021.igem.org/wiki/images/f/f2/T--KCL_UK--Phystech14.png' />
-        <i class = "plots-plot__description"> A comparison between the distributions for the frames of the sidechain RMSD values of the wild-type and mutated ChABC protein models. The difference was not statistically significant (p = 0.6)</i>
+        <i class = "plots-plot__description"> Figure 4: A comparison between the distributions for the frames of the sidechain RMSD values of the wild-type and mutated ChABC protein models. The difference was not statistically significant (p = 0.6)</i>
     </div>
 
     <div class="plots-plot__container">
         <img class = "plots-plot__image" src = 'https://2021.igem.org/wiki/images/b/b1/T--KCL_UK--Phystech16.png' />
-        <i class = "plots-plot__description"> A comparison between the distributions for the frames of the total RMSD values of the wild-type and mutated ChABC protein models. The difference was statistically significant (p = 2.6e-9)</i>
+        <i class = "plots-plot__description"> Figure 5: A comparison between the distributions for the frames of the total RMSD values of the wild-type and mutated ChABC protein models. The difference was statistically significant (p = 2.6e-9)</i>
     </div>
 
 </div>
@@ -75,12 +193,12 @@ In order to simulate those mutations in silico we compared the canonical 1HN0 st
 
     <div class="plots-plot__container">
         <img class = "plots-plot__image" src = 'https://2021.igem.org/wiki/images/3/3f/T--KCL_UK--Phystech15.png' />
-        <i class = "plots-plot__description"> A comparison between the distributions for the frames of the total radius of gyration values of the wild-type and mutated ChABC protein models. The difference was statistically significant (p = 3.5e-9)</i>
+        <i class = "plots-plot__description"> Figure 6: A comparison between the distributions for the frames of the total radius of gyration values of the wild-type and mutated ChABC protein models. The difference was statistically significant (p = 3.5e-9)</i>
     </div>
 
     <div class="plots-plot__container">
         <img class = "plots-plot__image" src = 'https://2021.igem.org/wiki/images/3/3b/T--KCL_UK--Phystech13.png' />
-        <i class = "plots-plot__description">A comparison between the distributions of all the protein residues based on RMSF between the wild-type and mutated ChABC protein models. The difference was statistically significant (p = 1.1e-10) </i>
+        <i class = "plots-plot__description">Figure 7: A comparison between the distributions of all the protein residues based on RMSF between the wild-type and mutated ChABC protein models. The difference was statistically significant (p = 1.1e-10) </i>
     </div>
 
 </div>
@@ -92,7 +210,7 @@ In order to simulate those mutations in silico we compared the canonical 1HN0 st
 
 
 <h2 class="plots-explanation__title">Analysis of total results by Rgyr and RMSF</h2>
-<p class="plots-explanation__text">Two further ways the WT and MUT structures were analysed was through measuring the Radius of Gyration (Rgyr) for the whole protein over the modelling time and the Root Mean Square Flexibility (RMSF) of each residue. In Figure 3 we can see distribution plots for the values of those measurements. Overall, they also show significant positive improvement in stability. The mean Radius of Gyration went down from 34.79 to 34.51 with noticeable decrease in the maximum from 35.58 to 35.06 units. The RMSF values showed a decrease from 4.87 to 4.44 on average and 12.6 to 7.6 at the maximum. The latter part of this result shows that the mutations managed to greatly improve the most unstable regions in the protein. </p>
+<p class="plots-explanation__text">Two further ways the WT and MUT structures were analysed was through measuring the Radius of Gyration (Rgyr) for the whole protein over the modelling time and the Root Mean Square Flexibility (RMSF) of each residue. In Figures 6 and 7 we can see distribution plots for the values of those measurements. Overall, they also show significant positive improvement in stability. The mean Radius of Gyration went down from 34.79 to 34.51 with noticeable decrease in the maximum from 35.58 to 35.06 units. The RMSF values showed a decrease from 4.87 to 4.44 on average and 12.6 to 7.6 at the maximum. The latter part of this result shows that the mutations managed to greatly improve the most unstable regions in the protein. </p>
 
 </br>
 
@@ -108,14 +226,14 @@ In order to simulate those mutations in silico we compared the canonical 1HN0 st
         <img class = "plots-mutations__plot" src = 'https://2021.igem.org/wiki/images/9/94/T--KCL_UK--Phystech28.png' />
     </div>
 </br>
-    <i class = "plots-mutations__description"> A comparison of the RMSF values before and after mutation. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus praesentium quidem perspiciatis quae assumenda, qui maxime porro expedita ab impedit pariatur vel totam placeat, voluptates nulla ratione distinctio eligendi fuga.</i>
+    <i class = "plots-mutations__description"> Figure 8: A comparison of the RMSF values before and after mutation. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus praesentium quidem perspiciatis quae assumenda, qui maxime porro expedita ab impedit pariatur vel totam placeat, voluptates nulla ratione distinctio eligendi fuga.</i>
     
     </div>
 
 </br>
 
 <h2 class="plots-explanation__title">Analysis of the local effect of mutations by RMSF</h2>
-<p class="plots-explanation__text">In Figure 4 we can see each of the mutations and how they affected the RMSF value at their own position and also the positions surrounding them. The effects can be split into three broad categories. ALA228LYS, ASN288ASP, SER343ASN, GLN 781 GLU are obvious improvements in the rigidity of the structure. SER274PRO and ARG670THR had what can be described as a variable effect. In the N-terminal direction the protein lost rigidity, which it gained in the C-terminal direction. LYS194GLU and LYS654ASP seem to have had an increase of flexibility. However, what also needs to be considered is not only the residues surrounding the mutation on the amino-acid chain, but also the residues that come into contact with it in three dimensional space. The massively decreased maximum mentioned in the section above was likely due to precisely LYS194GLU. Residue 194 sits opposite THR112. In the WT structure the RMSF value for the latter is 12.6, whereas in the MUT structure it is only 6.6. This decrease is best attributed to the effects of the mutation on the rigidity of the structure. Therefore, there was a slight increase in RMSF locally, it contributed to stabilising another area much more.
+<p class="plots-explanation__text">In Figure 8 we can see each of the mutations and how they affected the RMSF value at their own position and also the positions surrounding them. The effects can be split into three broad categories. ALA228LYS, ASN288ASP, SER343ASN, GLN 781 GLU are obvious improvements in the rigidity of the structure. SER274PRO and ARG670THR had what can be described as a variable effect. In the N-terminal direction the protein lost rigidity, which it gained in the C-terminal direction. LYS194GLU and LYS654ASP seem to have had an increase of flexibility. However, what also needs to be considered is not only the residues surrounding the mutation on the amino-acid chain, but also the residues that come into contact with it in three dimensional space. The massively decreased maximum mentioned in the section above was likely due to precisely LYS194GLU. Residue 194 sits opposite THR112. In the WT structure the RMSF value for the latter is 12.6, whereas in the MUT structure it is only 6.6. This decrease is best attributed to the effects of the mutation on the rigidity of the structure. Therefore, there was a slight increase in RMSF locally, it contributed to stabilising another area much more.
 </p>
 
 <h2 class="plots-explanation__title">Conclusion</h2>
@@ -125,7 +243,7 @@ In order to simulate those mutations in silico we compared the canonical 1HN0 st
 
 </div> 
 
-
+<!-- END OF PHYSTECH CODE -->
 
 </body>
 </html>
