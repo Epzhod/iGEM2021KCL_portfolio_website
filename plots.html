@@ -16,8 +16,7 @@
 <style>
 
 .plots__container {
-    font-family: Heebo;
-    background-color:#c4e3fd;                
+    font-family: Heebo;            
                 --pear: #cde43a ;
                 --seagreen: #58bc82 ;
                 --prussian: #13293d;
@@ -50,7 +49,6 @@
     font-size: clamp(9px, 1vw, 2vw);
     width: clamp(200px, 28vw, 40vw);
     text-align: justify;
-    background-color: var(--uranian);
     padding: 1vw;
     margin-bottom: 2rem;
 }
@@ -104,9 +102,17 @@
     font-size: 1vw !important;
 }
 
-.plots-explanation__title {
-    background-color: var(--prussian);
-    color: white !important;
+h5.plots-explanation__title {
+    margin: 0px !important;
+    padding: 1rem;
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+    margin-bottom: 0.25rem !important;
+    text-indent: 1rem !important;
+    font-size: 1.5vw !important;
+}
+
+h2.plots-explanation__title {
     margin: 0px !important;
     padding: 1rem;
     padding-top: 1.5rem !important;
@@ -117,8 +123,6 @@
 }
 
 .plots-explanation__text {
-    background-color: var(--cobalt);
-    color: white !important;
     margin: 0px !important;
     padding: 1rem !important;
     padding-top: 2rem !important;
@@ -136,21 +140,27 @@
 
 </br>
 
-<h2 class="plots-explanation__title">Molecular simulation</h2>
+<h2 class="plots-explanation__title">Molecular simulation of Chondroitinase ABC</h2>
 <p class="plots-explanation__text">
     <b> Introduction </b>
     </br>
+</br>
     This year our team decided to look at Chondroitinase ABC (ChABC) as a potential therapeutic agent in SCI. The main use case we are considering is injections along the spinal cord, which have the potential to stimulate neurite regrowth. The main issue with applying ChABC endogenously is that it becomes unstable at normal human physiological temperatures, 37 *C. In order to solve this problem our team collaborated with the Phystech Moscow 2021 iGEM team to computationally model eight mutations on the 1HN0 ChABC structure.
     </br>
+</br>
     <b>Computational Mutation</b>
     </br>
+</br>
     A paper published by Dr. Marian Hettiaratchi in August of 2020 analysed the impact of directed mutagenesis at certain residue positions of ChABC. We were lucky enough to be provided by Dr. Hettiaratchi with a list of eight positions that were suspected to have a significant impact on the stability of ChABC. We were also given the mutations that might have the best impact at those positions.
 In order to simulate those mutations in silico we compared the canonical 1HN0 structure (WT) with a homology model of the sequence with the mutated residues (MUT). The homology model was created using MODELLER 10.1. The two structures' sequences and overall structures were positionally identical, with the exception of the eight mutations.
     </br>
+</br>
     <b> Parameters of molecular dynamics simulation </b>
     </br>
+</br>
     The two structures WT and MUT were sent over to the Phystech Moscow team, who modelled and compared their thermostability in silico for 100 frames at 310.15°K (37°C). The simulation was performed in an explicit solvent that had been equilibrated for charge, pressure and temperature using the “c36m” forcefield and supporting ensembles.
     </br>
+</br>
 </p>
 
 
@@ -168,7 +178,7 @@ In order to simulate those mutations in silico we compared the canonical 1HN0 st
 </div>
 
 
-<h2 class="plots-explanation__title">Analysis of total results by RMSD</h2>
+<h5 class="plots-explanation__title">Analysis of total results by RMSD</h5>
 <p class="plots-explanation__text">In Figures 1 and 2 we can see the protein structures of WT and MUT deviating over time until they stabilise around fifteen frames after the beginning of the modelling. The deviation is measured using Root Mean Square Deviation. To better understand the results, we converted the data into a distribution curve that would show if we improved the RMSD over the length of time of simulation. Figures 3 to 5 show those distributions. According to the data shown, the mutations were overall successful. The backbone RMSD for WT was 2.25 with a maximum of 3.57, while for MUT it was 1.88 with a maximum of 2.57 units. The sidechain distribution did not significantly change. However, the RMSD scores for the whole protein did change from 2.25 with maximum 3.57 for WT and 1.88 with maximum 2.57 for MUT. The fact that the values for the backbone and the total change in RMSD are the same to three significant figures suggests that the improvement of backbone stability plays a key role in the overall stability of the protein. </p>
 
 
@@ -212,7 +222,7 @@ In order to simulate those mutations in silico we compared the canonical 1HN0 st
 </br>
 
 
-<h2 class="plots-explanation__title">Analysis of total results by Rgyr and RMSF</h2>
+<h5 class="plots-explanation__title">Analysis of total results by Rgyr and RMSF</h5>
 <p class="plots-explanation__text">Two further ways the WT and MUT structures were analysed was through measuring the Radius of Gyration (Rgyr) for the whole protein over the modelling time and the Root Mean Square Flexibility (RMSF) of each residue. In Figures 6 and 7 we can see distribution plots for the values of those measurements. Overall, they also show significant positive improvement in stability. The mean Radius of Gyration went down from 34.79 to 34.51 with noticeable decrease in the maximum from 35.58 to 35.06 units. The RMSF values showed a decrease from 4.87 to 4.44 on average and 12.6 to 7.6 at the maximum. The latter part of this result shows that the mutations managed to greatly improve the most unstable regions in the protein. </p>
 
 </br>
@@ -229,17 +239,17 @@ In order to simulate those mutations in silico we compared the canonical 1HN0 st
         <img class = "plots-mutations__plot" src = 'https://2021.igem.org/wiki/images/9/94/T--KCL_UK--Phystech28.png' />
     </div>
 </br>
-    <i class = "plots-mutations__description"> Figure 8: A comparison of the RMSF values before and after mutation.</i>
+    <i class = "plots-mutations__description"> Figure 8: A comparison of the RMSF values before and after mutation. The values are given for each residue position, with the mutated position in the centre.</i>
     
     </div>
 
 </br>
 
-<h2 class="plots-explanation__title">Analysis of the local effect of mutations by RMSF</h2>
+<h5 class="plots-explanation__title">Analysis of the local effect of mutations by RMSF</h5>
 <p class="plots-explanation__text">In Figure 8 we can see each of the mutations and how they affected the RMSF value at their own position and also the positions surrounding them. The effects can be split into three broad categories. ALA228LYS, ASN288ASP, SER343ASN, GLN 781 GLU are obvious improvements in the rigidity of the structure. SER274PRO and ARG670THR had what can be described as a variable effect. In the N-terminal direction the protein lost rigidity, which it gained in the C-terminal direction. LYS194GLU and LYS654ASP seem to have had an increase of flexibility. However, what also needs to be considered is not only the residues surrounding the mutation on the amino-acid chain, but also the residues that come into contact with it in three dimensional space. The massively decreased maximum mentioned in the section above was likely due to precisely LYS194GLU. Residue 194 sits opposite THR112. In the WT structure the RMSF value for the latter is 12.6, whereas in the MUT structure it is only 6.6. This decrease is best attributed to the effects of the mutation on the rigidity of the structure. Therefore, there was a slight increase in RMSF locally, it contributed to stabilising another area much more.
 </p>
 
-<h2 class="plots-explanation__title">Conclusion</h2>
+<h5 class="plots-explanation__title">Conclusion</h5>
 <p class="plots-explanation__text">Overall, the results of the computer simulation of the combined effect of these eight mutations proved to be a moderate success. While it did not provide massive increases to the average stability of the whole 1HN0 structure, it did show possible solutions for several unstable local regions. It is also a good proof of concept that such an approach can provide valuable insight into the compound effect of several mutations.
 </p>
 
