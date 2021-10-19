@@ -5,24 +5,141 @@
         <title>Codon Optimizer</title>
         <meta name="description" content="Codon Optimizer Javascript">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-        <link rel="stylesheet" href ="./optimizer.css" />
-        
-        
-        
+     
     </head>
 
 
     <body>
 
+
+<!-- OPTIMIZER CODE BEGINS -->
+
+    <style>
+        .optimizer__title {
+  padding-bottom: 1vw;
+}
+
+.optimizer--content {
+    --standard-width: 55vw;
+    font-family: Heebo;            
+                --pear: #cde43a ;
+                --seagreen: #58bc82 ;
+                --prussian: #13293d;
+                --uranian: #c4e3fd;
+                --dodger: #4895ef;
+                --cobalt: #1446a0;
+}
+
+.optimizer--content h2, h3, h4, h5 {
+    padding: none !important;
+}
+
+.optimizer__prompt {
+  display: block;
+  margin: 1vw;
+  padding: 0;
+  color: white;
+  text-align: left;
+  margin-left: 15vw;
+  font-size: clamp(14px, 1.75vw, 28px);
+  font-weight: 500;
+}
+
+#txtInput {
+  display: block;
+  width: var(--standard-width);
+  height: 15em;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 1.5vw;
+  font-size: clamp(12px, 1.3vw, 20px);
+  resize: none;
+  background-color: var(--pear);
+  overflow: auto;
+}
+
+.optimizer__clickables {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap:1em;
+  padding-top: clamp(10px, 1.5vw, 20px);
+  width: var(--standard-width);
+  border: darkblue;
+  margin: auto;
+}
+
+.optimizer__choose-text {
+  font-weight: 500;
+  font-size: clamp(12px, 1.5vw, 24px);
+}
+
+.optimizer__choose-table {
+  background-color: var(--pear);
+  color: black;
+  font-weight: 600;
+  height: 2.2em;
+  width: 15em;
+  font-size: clamp(12px, 1.4vw, 24px);
+}
+
+
+#Translate_Button {
+  height: 2.2em;
+  width: 15em;
+  font-size: clamp(12px, 1.4vw, 24px);
+  font-weight: 600;
+  background-color: var(--seagreen);
+  color:white; 
+}
+
+#txtOutput {
+    display: block;
+    width: auto;
+    height: 15em;
+    background-color: var(--dodger);
+    font-size: clamp(12px, 1.3vw, 20px);
+    resize: none;
+    overflow: auto;
+    margin: auto;
+    padding: 1em;
+    overflow: auto;
+    overflow-wrap: break-word;
+}
+
+#txtWarnings {
+    display: block;
+    background-color: var(--pear);
+    width: 50vw;
+    height: 2em;
+    background-color: var(--uranian);
+    font-size: clamp(12px, 1.3vw, 20px);
+    resize: none;
+    overflow: auto;
+    margin: auto;
+    color: red;
+    padding: 1em;
+    height: 5vw;
+    overflow: hidden;
+}
+
+.optimizer-output__background {
+  background-color: var(--dodger);
+  width: var(--standard-width);
+  margin: auto;
+}
+    </style>
+
+
     <div class="optimizer--content">
 
-        <h1 class = 'optimizer__title'>Codon Optimizer</h1>
+        <h2 class = 'optimizer__title'>Codon Optimizer</h2>
 
 
         <form>
 
-            <h4 class = 'optimizer__prompt'>Insert sequence:</h4>
+            <h4 class = 'optimizer__prompt'>Insert protein sequence:</h4>
 
             <textarea type="text" id="txtInput"></textarea>
             
@@ -43,7 +160,7 @@
         </br>
             </form>
         
-        <h4 class = 'optimizer__prompt'>Optimized sequence:</h4>
+        <h4 class = 'optimizer__prompt'>Optimized DNA sequence:</h4>
         <div class="optimizer-output__background">
         </br>
         <p type ="text" id = 'txtWarnings'><span style="color:orange">Input Protein Seqeuence</span></p>
@@ -52,28 +169,23 @@
         </br>
         </br>
     
-        <div class="explanation__container">
-            <h2>Optimizer Information:</h2>
+            <h4>Optimizer Information:</h4>
 
-            <h3>What is this?</h3>
+            <h5>What is this?</h5>
             <p>A codon optimizer is a tool that translates a protein sequence in reverse. This translation is done so that the resulting DNA sequence will contain the codons most used by an organism for a particular amino-acid. This in turn can significantly increase protein production.</p>
 
         </br>
-            <h3>How to use it</h3>
-            <h4>Input</h4>
-            <p>The input is the protein sequence that is to be reverse-translated. The format it should be input in is standard one-letter amino-acid code.</p>
-            <h4>Choose an organism</h4>
-            <p>This codon optimizer can use the codon preferences for four organisms: E.coli bacteria, D. melanogaster flies, mice, and humans. The choice can be made from the drop-down menu below the input field.</p>
-            <h4>Optimizer</h4>
-            <p>The output is the 5' to 3' DNA sequence that has been optimized based on the selected organism's codon frequencies.</p>
-            
-        </br> 
-            <h3>Warnings</h3>
-            <p>
+            <h5>How to use it:</h5>
+            <p><b>Input</b></br>
+            The input is the protein sequence that is to be reverse-translated. The format it should be input in is standard one-letter amino-acid code.
+        </br><b>Choose an organism</b></br>
+            This codon optimizer can use the codon preferences for four organisms: E.coli bacteria, D. melanogaster flies, mice, and humans. The choice can be made from the drop-down menu below the input field.
+        </br><b>Optimizer</b></br>
+            The output is the 5' to 3' DNA sequence that has been optimized based on the selected organism's codon frequencies.
+        </br><b>Warnings</b></br>
             There are two warnings that may appear. If you see 'Invalid Value!', that means that the input contains a non-standard one-letter amino-acid code. If you see 'No stop codon!', that means the input protein sequence does not have a '*' to signify termination at the end of it.
             </p>
 
-        </div>
     
     
 
@@ -253,6 +365,10 @@
     };
 
     </script>
+
+
+<!-- OPTIMIZER CODE ENDS -->
+
 
     </body>
 </html>
